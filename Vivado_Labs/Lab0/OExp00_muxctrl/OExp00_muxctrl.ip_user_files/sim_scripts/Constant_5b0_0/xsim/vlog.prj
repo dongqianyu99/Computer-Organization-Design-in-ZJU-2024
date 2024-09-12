@@ -1,0 +1,8 @@
+verilog xil_defaultlib  \
+"../../../../OExp00_muxctrl.gen/sources_1/ip/Constant_5b0_0/src/Constant_5b0.v" \
+"../../../../OExp00_muxctrl.gen/sources_1/ip/Constant_5b0_0/sim/Constant_5b0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

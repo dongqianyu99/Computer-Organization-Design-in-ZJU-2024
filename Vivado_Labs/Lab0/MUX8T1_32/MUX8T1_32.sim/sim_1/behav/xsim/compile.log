@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado_Labs/MUX8T1_32/MUX8T1_32.srcs/sources_1/new/MUX8T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX8T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado_Labs/MUX8T1_32/MUX8T1_32.srcs/sim_1/new/MUX8T1_32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX8T1_32_tb

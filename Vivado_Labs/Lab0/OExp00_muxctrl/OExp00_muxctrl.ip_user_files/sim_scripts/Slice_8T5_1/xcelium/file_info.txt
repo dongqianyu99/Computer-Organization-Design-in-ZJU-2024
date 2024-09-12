@@ -1,0 +1,3 @@
+Slice_8T5.v,verilog,xil_defaultlib,../../../../OExp00_muxctrl.gen/sources_1/ip/Slice_8T5_1/src/Slice_8T5.v,
+Slice_8T5_1.v,verilog,xil_defaultlib,../../../../OExp00_muxctrl.gen/sources_1/ip/Slice_8T5_1/sim/Slice_8T5_1.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

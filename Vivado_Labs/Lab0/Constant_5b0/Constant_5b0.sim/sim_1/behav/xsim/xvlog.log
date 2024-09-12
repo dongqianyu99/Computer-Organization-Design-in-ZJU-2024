@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado_Labs/Constant_5b0/Constant_5b0.srcs/sources_1/new/Constant_5b0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Constant_5b0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado_Labs/Constant_5b0/Constant_5b0.srcs/sim_1/new/Constant_5b0_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Constant_5b0_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado_Labs/Constant_5b0/Constant_5b0.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Concat.srcs/sources_1/new/Concat.v" \
+"../../../../Concat.srcs/sim_1/new/Concat_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

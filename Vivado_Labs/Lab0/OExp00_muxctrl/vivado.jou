@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Sep 12 17:51:54 2024
+# Process ID: 16508
+# Current directory: D:/Vivado_Labs/Lab0/OExp00_muxctrl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7588 D:\Vivado_Labs\Lab0\OExp00_muxctrl\OExp00_muxctrl.xpr
+# Log file: D:/Vivado_Labs/Lab0/OExp00_muxctrl/vivado.log
+# Journal file: D:/Vivado_Labs/Lab0/OExp00_muxctrl\vivado.jou
+# Running On: Lee, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16849 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado_Labs/Lab0/OExp00_muxctrl/OExp00_muxctrl.xpr
+update_compile_order -fileset sources_1
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+reset_run impl_1

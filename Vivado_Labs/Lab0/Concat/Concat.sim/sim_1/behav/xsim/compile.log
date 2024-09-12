@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado_Labs/Concat/Concat.srcs/sources_1/new/Concat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Concat
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado_Labs/Concat/Concat.srcs/sim_1/new/Concat_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Concat_tb

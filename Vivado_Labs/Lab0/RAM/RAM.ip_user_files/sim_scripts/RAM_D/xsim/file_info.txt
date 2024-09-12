@@ -1,2 +1,0 @@
-RAM_D.v,verilog,xil_defaultlib,../../../../RAM.gen/sources_1/ip/RAM_D/sim/RAM_D.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v
