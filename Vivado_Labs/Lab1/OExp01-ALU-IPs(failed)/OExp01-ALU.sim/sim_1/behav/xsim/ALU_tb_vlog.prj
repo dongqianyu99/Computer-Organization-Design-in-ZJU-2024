@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../OExp01-ALU.ip_user_files/bd/ALU/ipshared/ce01/and_32.v" \
+"../../../../OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_and32_0_0/sim/ALU_and32_0_0.v" \
+"../../../../OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v" \
+"../../../../OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v" \
+"../../../../OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlslice_1_0/sim/ALU_xlslice_1_0.v" \
+"../../../../OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v" \
+"../../../../OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v" \
+"../../../../OExp01-ALU.ip_user_files/bd/ALU/sim/ALU.v" \
+"../../../../OExp01-ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v" \
+"../../../../OExp01-ALU.srcs/sim_1/new/ALU_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
