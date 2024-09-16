@@ -1,0 +1,45 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/apps/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_3 -L xlconcat_v2_1_5 -L xlconstant_v1_1_8 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX8T1_32
+Compiling module xil_defaultlib.ALU_MUX8T1_32_0_0
+Compiling module xil_defaultlib.SignalExt_32
+Compiling module xil_defaultlib.ALU_SignalExt_32_0_0
+Compiling module xil_defaultlib.addc_32
+Compiling module xil_defaultlib.ALU_addc_32_0_0
+Compiling module xil_defaultlib.and32
+Compiling module xil_defaultlib.ALU_and32_0_0
+Compiling module xil_defaultlib.nor32
+Compiling module xil_defaultlib.ALU_nor32_0_0
+Compiling module xil_defaultlib.or32
+Compiling module xil_defaultlib.ALU_or32_0_0
+Compiling module xil_defaultlib.or_bit_32
+Compiling module xil_defaultlib.ALU_or_bit_32_0_0
+Compiling module xil_defaultlib.srl32
+Compiling module xil_defaultlib.ALU_srl32_0_0
+Compiling module xlconcat_v2_1_5.xlconcat_v2_1_5_xlconcat(IN1_WID...
+Compiling module xil_defaultlib.ALU_xlconcat_0_0
+Compiling module xlconstant_v1_1_8.xlconstant_v1_1_8_xlconstant(CON...
+Compiling module xil_defaultlib.ALU_xlconstant_0_0
+Compiling module xlslice_v1_0_3.xlslice_v1_0_3_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.ALU_xlslice_0_0
+Compiling module xlslice_v1_0_3.xlslice_v1_0_3_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.ALU_xlslice_1_0
+Compiling module xlslice_v1_0_3.xlslice_v1_0_3_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.ALU_xlslice_2_0
+Compiling module xil_defaultlib.xor32
+Compiling module xil_defaultlib.ALU_xor32_0_0
+Compiling module xil_defaultlib.ALU_xor32_0_1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_wrapper
+Compiling module xil_defaultlib.ALU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_tb_behav

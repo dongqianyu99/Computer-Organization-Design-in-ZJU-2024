@@ -1,0 +1,15 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v,1726473223,verilog,,D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.srcs/sim_1/new/ALU_tb.v,,ALU_wrapper,,,,,,,,
+D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_and32_0_0/sim/ALU_and32_0_0.v,1726473224,verilog,,D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v,,ALU_and32_0_0,,,,,,,,
+D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v,1726473224,verilog,,D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v,,ALU_xlconcat_0_0,,,,,,,,
+D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v,1726473225,verilog,,D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlslice_1_0/sim/ALU_xlslice_1_0.v,,ALU_xlconstant_0_0,,,,,,,,
+D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v,1726473224,verilog,,D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v,,ALU_xlslice_0_0,,,,,,,,
+D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlslice_1_0/sim/ALU_xlslice_1_0.v,1726473225,verilog,,D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v,,ALU_xlslice_1_0,,,,,,,,
+D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v,1726473225,verilog,,D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/sim/ALU.v,,ALU_xlslice_2_0,,,,,,,,
+D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/ipshared/95c3/src/and32.v,1726473224,verilog,,D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/ip/ALU_and32_0_0/sim/ALU_and32_0_0.v,,and32,,,,,,,,
+D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.ip_user_files/bd/ALU/sim/ALU.v,1726473223,verilog,,D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v,,ALU,,,,,,,,
+D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.sim/sim_1/behav/xsim/glbl.v,1725935378,verilog,,,,glbl,,,,,,,,
+D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.srcs/sim_1/new/ALU_tb.v,1725935380,verilog,,,,ALU_tb,,,,,,,,
