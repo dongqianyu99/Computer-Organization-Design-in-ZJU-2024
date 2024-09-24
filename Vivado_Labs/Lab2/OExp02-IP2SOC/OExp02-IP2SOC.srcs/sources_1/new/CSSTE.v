@@ -49,7 +49,7 @@ module CSSTE(
     // U2
     wire [31: 0] spo_o;
     // U3
-    wire [31: 0] douta;
+    wire [31: 0] douta_o;
     // U4
     wire [31: 0] Cpu_data4bus_o;
     wire [31: 0] ram_data_in_o;
@@ -68,7 +68,7 @@ module CSSTE(
     wire [7: 0] segment_o;
     // U7
     wire [1: 0] counter_set_o;
-    wrie [15: 0] LED_out_o;
+    wire [15: 0] LED_out_o;
     // U8
     wire [31: 0] clkdiv_o;
     wire Clk_CPU_o;
@@ -90,7 +90,7 @@ module CSSTE(
         .MemRW(MemRW_o),
         .Addr_out(Addr_out_o),
         .Data_out(Data_out_o),
-        .PC_out(PC_out_o),
+        .PC_out(PC_out_o)
     );
 
     ROM_D_0 U2(
@@ -202,6 +202,7 @@ module CSSTE(
         .clk2(clkdiv_o[11]),
         .counter_we(counter_we_o),
         .counter_val(Peripheral_in_o),
+        .counter_ch(counter_set_o),
         .counter0_OUT(counter0_OUT_o),
         .counter1_OUT(counter1_OUT_o),
         .counter2_OUT(counter2_OUT_o),
@@ -209,7 +210,7 @@ module CSSTE(
     );
 
     VGA_0 U11(
-        .clk_25m(clkdiv[1]),
+        .clk_25m(clkdiv_o[1]),
         .clk_100m(clk_100mhz),
         .rst(rst_o),
         .pc(PC_out_o),
