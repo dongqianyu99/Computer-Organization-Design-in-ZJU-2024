@@ -41,13 +41,6 @@ module CSSTE(
     output [7: 0] segment
     );
 
-    // U9
-    wire [3: 0] BTN_OK_o;
-    wire [15: 0] SW_OK_o;
-    wire rst_o;
-    // U8
-    wire [31: 0] clkdiv_o;
-    wire Clk_CPU_o;
     // U1
     wire MemRW_o;
     wire [31: 0] Addr_out_o;
@@ -70,9 +63,19 @@ module CSSTE(
     wire [7: 0] point_out_o;
     wire [7: 0] LE_out;
     wire [31: 0] Disp_num_o;
+    // U6
+    wire [7: 0] AN_o;
+    wire [7: 0] segment_o;
     // U7
     wire [1: 0] counter_set_o;
     wrie [15: 0] LED_out_o;
+    // U8
+    wire [31: 0] clkdiv_o;
+    wire Clk_CPU_o;
+    // U9
+    wire [3: 0] BTN_OK_o;
+    wire [15: 0] SW_OK_o;
+    wire rst_o;
     // U10
     wire counter0_OUT_o;
     wire counter1_OUT_o;
@@ -147,6 +150,30 @@ module CSSTE(
         .Disp_num(Disp_num_o)
     );
 
+    Seg7_Dev_0 U6(
+        .disp_num(Disp_num_o),
+        .point(point_out_o),
+        .les(LE_out_o),
+        .scan({clkdiv_o[18], clkdiv_o[17], clkdiv_o[16]}),
+        .AN(AN_o),
+        .segment(segment_o)
+    );
+
+    assign AN = AN_o;
+    assign segment = segment_o;
+
+    SPIO U7(
+        .clk(~Clk_CPU_o),
+        .rst(rst_o),
+        .Start(clkdiv_o[20]),
+        .EN(GPIOf0000000_we_o),
+        .P_Data(Peripheral_in_o),
+        .counter_set(counter_set_o),
+        .LED_out(LED_out_o)
+    );
+
+    assign LED_out = LED_out_o;
+
     clk_div U8(
         .clk(clk_100mhz),
         .rst(rst),
@@ -179,6 +206,24 @@ module CSSTE(
         .counter1_OUT(counter1_OUT_o),
         .counter2_OUT(counter2_OUT_o),
         .counter_out(counter_out_o)
+    );
+
+    VGA_0 U11(
+        .clk_25m(clkdiv[1]),
+        .clk_100m(clk_100mhz),
+        .rst(rst_o),
+        .pc(PC_out_o),
+        .inst(spo_o),
+        .alu_res(Addr_out_o),
+        .mem_wen(MemRW_o),
+        .dmem_o_data(douta_o),
+        .dmem_i_data(ram_data_in_o),
+        .dmem_addr(Addr_out_o),
+        .hs(HSYNC),
+        .vs(VSYNC),
+        .vga_r(Red),
+        .vga_g(Green),
+        .vga_b(Blue)
     );
 
 
