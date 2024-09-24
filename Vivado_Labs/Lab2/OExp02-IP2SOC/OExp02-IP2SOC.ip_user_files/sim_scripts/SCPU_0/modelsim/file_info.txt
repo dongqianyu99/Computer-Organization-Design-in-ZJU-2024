@@ -1,3 +1,0 @@
-SCPU.v,verilog,xil_defaultlib,../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_0/src/SCPU.v,
-SCPU_0.v,verilog,xil_defaultlib,../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_0/sim/SCPU_0.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v
