@@ -51,12 +51,27 @@ module CSSTE(
     // U1
     wire MemRW_o;
     wire [31: 0] Addr_out_o;
-    wire [31: 0] Data_out_o
+    wire [31: 0] Data_out_o;
     wire [31: 0] PC_out_o;
     // U2
     wire [31: 0] spo_o;
+    // U3
+    wire [31: 0] douta;
     // U4
     wire [31: 0] Cpu_data4bus_o;
+    wire [31: 0] ram_data_in_o;
+    wire [9: 0] ram_addr_o;
+    wire data_ram_we_o;
+    wire counter_we_o;
+    wire Peripheral_in_o;
+    // U7
+    wire [1: 0] counter_set_o;
+    wrie [15: 0] LED_out_o;
+    // U10
+    wire counter0_OUT_o;
+    wire counter1_OUT_o;
+    wire counter2_OUT_o;
+    wire [31: 0] counter_out_o;
 
     SCPU U1(
         .clk(Clk_CPU_o),
@@ -72,6 +87,26 @@ module CSSTE(
     ROM_D_0 U2(
         .a(PC_out_o[11: 2]),
         .spo(spo_o)
+    );
+
+    RAM_B U3(
+        .clka(~clk_100mhz),
+        .wea(data_ram_we_o),
+        .addra(ram_addr_o),
+        .dina(ram_data_in_o),
+        .douta(douta_o)
+    );
+
+    MIO_BUS U4(
+        .clk(clk_100mhz),
+        .rst(rst_o),
+        .BTN(BTN_OK_o),
+        .SW(SW_OK_o),
+        .mem_w(MemRW_o),
+        .Cpu_data2bus(Data_out_o),
+        .addr_bus(Addr_out_o),
+        .ram_data_out(douta_o),
+        .led_out(LED_out_o),
     );
 
     clk_div U8(
@@ -92,6 +127,20 @@ module CSSTE(
         .BTN_OK(BTN_OK_o),
         .SW_OK(SW_OK_o),
         .rst(rst_o)
+    );
+
+    Counter_x U10(
+        .clk(~Clk_CPU_o),
+        .rst(rst_o),
+        .clk0(clkdiv_o[6]),
+        .clk1(clkdiv_o[9]),
+        .clk2(clkdiv_o[11]),
+        .counter_we(counter_we_o),
+        .counter_val(Peripheral_in_o),
+        .counter0_OUT(counter0_OUT_o),
+        .counter1_OUT(counter1_OUT_o),
+        .counter2_OUT(counter2_OUT_o),
+        .counter_out(counter_out_o)
     );
 
 
