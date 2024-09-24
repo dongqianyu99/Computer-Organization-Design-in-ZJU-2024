@@ -62,8 +62,14 @@ module CSSTE(
     wire [31: 0] ram_data_in_o;
     wire [9: 0] ram_addr_o;
     wire data_ram_we_o;
+    wire GPIOf0000000_we_o;
+    wire GPIOe0000000_we_o;
     wire counter_we_o;
     wire Peripheral_in_o;
+    // U5
+    wire [7: 0] point_out_o;
+    wire [7: 0] LE_out;
+    wire [31: 0] Disp_num_o;
     // U7
     wire [1: 0] counter_set_o;
     wrie [15: 0] LED_out_o;
@@ -107,6 +113,38 @@ module CSSTE(
         .addr_bus(Addr_out_o),
         .ram_data_out(douta_o),
         .led_out(LED_out_o),
+        .counter_out(counter_out_o),
+        .counter0_out(counter0_OUT_o),
+        .counter1_out(counter1_OUT_o),
+        .counter2_out(counter2_OUT_o),
+        .Cpu_data4bus(Cpu_data4bus_o),
+        .ram_data_in(ram_data_in_o),
+        .ram_addr(ram_addr_o),
+        .data_ram_we(data_ram_we_o),
+        .GPIOf0000000_we(GPIOf0000000_we_o),
+        .GPIOe0000000_we(GPIOe0000000_we_o),
+        .counter_we(counter_we_o),
+        .Peripheral_in(Peripheral_in_o)
+    );
+
+    Multi_8CH32 U5(
+        .clk(~Clk_CPU_o),
+        .rst(rst_o),
+        .EN(GPIOe0000000_we_o),
+        .Test(SW_OK_o[7: 5]),
+        .point_in({clkdiv_o[31: 0], clkdiv_o[31: 0]}),
+        .LES(64'b0),
+        .Data0(Peripheral_in_o),
+        .data1({2'b0, PC_out_o[31: 2]}),
+        .data2(spo_o),
+        .data3(counter_out_o),
+        .data4(Addr_out_o),
+        .data5(Data_out_o),
+        .data6(Cpu_data4bus_o),
+        .data7(PC_out_o),
+        .point_out(point_out_o),
+        .LE_out(LE_out_o),
+        .Disp_num(Disp_num_o)
     );
 
     clk_div U8(
