@@ -70,7 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -89,8 +89,9 @@ set_property ip_output_repo d:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.cach
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files d:/Vivado_Labs/Lab2/OExp02-IP2SOC/I_mem.coe
-add_files d:/Vivado_Labs/Lab2/OExp02-IP2SOC/D_mem.coe
+add_files D:/Vivado_Labs/Lab2/OExp02-IP2SOC/I_mem.coe
+add_files D:/Vivado_Labs/Lab2/OExp02-IP2SOC/D_mem.coe
+add_files d:/Vivado_Labs/Lab2/OExp02-IP2SOC/ROM.coe
 read_verilog -library xil_defaultlib {
   D:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/Counter_x.v
   D:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/MIO_BUS.v
@@ -101,14 +102,14 @@ read_verilog -library xil_defaultlib {
   D:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/clk_div.v
   D:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v
 }
-read_ip -quiet d:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci
+read_ip -quiet D:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci
 
-read_ip -quiet d:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/Seg7_Dev_0/Seg7_Dev_0.xci
+read_ip -quiet D:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/Seg7_Dev_0/Seg7_Dev_0.xci
 
-read_ip -quiet d:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/ROM_D_0/ROM_D_0.xci
+read_ip -quiet D:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/ROM_D_0/ROM_D_0.xci
 set_property used_in_implementation false [get_files -all d:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/ROM_D_0/ROM_D_0_ooc.xdc]
 
-read_ip -quiet d:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/RAM_B/RAM_B.xci
+read_ip -quiet D:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/RAM_B/RAM_B.xci
 set_property used_in_implementation false [get_files -all d:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/RAM_B/RAM_B_ooc.xdc]
 
 read_edif D:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/clk_div.edf
