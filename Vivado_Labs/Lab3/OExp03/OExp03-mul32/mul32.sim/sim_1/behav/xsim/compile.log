@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/Computer-Organization-Design-in-ZJU-2024/Vivado_Labs/Lab3/OExp03/OExp03-mul32/mul32.srcs/sources_1/new/mul32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/Computer-Organization-Design-in-ZJU-2024/Vivado_Labs/Lab3/OExp03/OExp03-mul32/mul32.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
