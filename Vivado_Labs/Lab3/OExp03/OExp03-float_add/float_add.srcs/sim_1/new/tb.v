@@ -41,10 +41,10 @@ module tb;
 		.rst(rst), 
 		.A(A), 
 		.B(B), 
-		.c(c), 
 		.en(en), 
 		.result(result), 
-		.fin(fin)
+		.fin(fin),
+		.over_underflow(over_underflow)
 	);
 	
 	always #5 clk = ~clk;

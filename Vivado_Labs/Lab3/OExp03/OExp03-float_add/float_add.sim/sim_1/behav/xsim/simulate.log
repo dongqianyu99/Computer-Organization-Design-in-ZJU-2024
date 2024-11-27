@@ -1,2 +1,2 @@
-Vivado Simulator 2017.4
 Time resolution is 1 ps
+$stop called at time : 270 ns : File "D:/Vivado_Labs/Lab3/OExp03/OExp03-float_add/float_add.srcs/sim_1/new/tb.v" Line 75

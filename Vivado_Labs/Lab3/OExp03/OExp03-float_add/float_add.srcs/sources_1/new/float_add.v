@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2021/01/25 17:03:13
+// Create Date: 2024/11/26 14:52:18
 // Design Name: 
 // Module Name: float_add
 // Project Name: 
@@ -18,6 +18,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
+
 
 module float_add(
 	input clk, 
@@ -55,7 +56,6 @@ module float_add(
 		end
 		
 		case(state)
-
 		start:
 		begin
 			// A
@@ -82,7 +82,7 @@ module float_add(
 			end
 			else 
 				state <= equal_ex;
-
+        end
 		equal_ex:
 		begin
 			if (xe == ye) begin
@@ -176,16 +176,16 @@ module float_add(
 		end
 
 		over:
-		begin
-			state <= start;
-		end
+        begin 
+            state <= start;
+        end
 
-		default:
-		begin
-			state <= start;
-		end
-
-		endcase
+        default:
+        begin
+            state <= start;
+        end
+        
+        endcase
 	end
 
 endmodule

@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Nov 12 15:31:21 2024
+# Process ID: 22256
+# Current directory: D:/Github/Computer-Organization-Design-in-ZJU-2024/Vivado_Labs/Lab3/OExp03/OExp03-mul32
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1284 D:\Github\Computer-Organization-Design-in-ZJU-2024\Vivado_Labs\Lab3\OExp03\OExp03-mul32\mul32.xpr
+# Log file: D:/Github/Computer-Organization-Design-in-ZJU-2024/Vivado_Labs/Lab3/OExp03/OExp03-mul32/vivado.log
+# Journal file: D:/Github/Computer-Organization-Design-in-ZJU-2024/Vivado_Labs/Lab3/OExp03/OExp03-mul32\vivado.jou
+# Running On: Lee, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16849 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Github/Computer-Organization-Design-in-ZJU-2024/Vivado_Labs/Lab3/OExp03/OExp03-mul32/mul32.xpr
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+set_property -name {xsim.simulate.runtime} -value {10000ns} -objects [get_filesets sim_1]
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+set_property -name {xsim.simulate.runtime} -value {5000ns} -objects [get_filesets sim_1]
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
