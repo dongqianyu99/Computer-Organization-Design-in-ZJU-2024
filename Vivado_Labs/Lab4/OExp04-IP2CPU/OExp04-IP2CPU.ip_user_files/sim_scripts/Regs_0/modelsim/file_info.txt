@@ -1,0 +1,3 @@
+Regs.v,verilog,xil_defaultlib,../../../../OExp04-IP2CPU.gen/sources_1/ip/Regs_0/src/Regs.v,
+Regs_0.v,verilog,xil_defaultlib,../../../../OExp04-IP2CPU.gen/sources_1/ip/Regs_0/sim/Regs_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
