@@ -28,7 +28,7 @@ module SCPU(
     input wire [31: 0] Data_in,
 
     output wire CPU_MIO,
-    output wire MenRW,
+    output wire MemRW,
     output wire [31: 0] PC_out,
     output wire [31: 0] Data_out, 
     output wire [31: 0] Addr_out
@@ -62,7 +62,7 @@ module SCPU(
 
     my_DataPath my_DataPath_0(
         .ALUSrc_B(ALUSrc_B),
-        .ALU_Control(ALU_Control),
+        .ALU_operation(ALU_Control),
         .Branch(Branch),
         .Data_in(Data_in),
         .ImmSel(ImmSel),
