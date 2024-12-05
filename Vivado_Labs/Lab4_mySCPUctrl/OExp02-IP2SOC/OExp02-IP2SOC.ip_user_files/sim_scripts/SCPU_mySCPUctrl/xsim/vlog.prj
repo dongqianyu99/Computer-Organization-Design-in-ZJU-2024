@@ -1,0 +1,20 @@
+verilog xil_defaultlib  \
+"../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/Regs_0/src/Regs.v" \
+"../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/Regs_0/sim/Regs_0.v" \
+"../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/MUX2T1/src/MUX2T1_32.v" \
+"../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/MUX2T1/sim/MUX2T1.v" \
+"../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/MUX4T1/src/MUX4T1_32.v" \
+"../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/MUX4T1/sim/MUX4T1.v" \
+"../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/ALU.v" \
+"../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/ImmGen.v" \
+"../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/REG32.v" \
+"../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/add_32.v" \
+"../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/my_DataPath.v" \
+"../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/my_SCPU_ctrl.v" \
+"../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/SCPU.v" \
+"../../../../OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/sim/SCPU_mySCPUctrl.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

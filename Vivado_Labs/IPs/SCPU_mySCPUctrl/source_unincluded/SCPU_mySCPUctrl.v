@@ -1,0 +1,30 @@
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// --------------------------------------------------------------------------------
+// Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+// Date        : Thu Dec  5 18:33:00 2024
+// Host        : Lee running 64-bit major release  (build 9200)
+// Command     : write_verilog -mode synth_stub D:/Vivado_Labs/IPs/SCPU_mySCPUctrl.SCPU_mySCPUctrl.v
+// Design      : SCPU
+// Purpose     : Stub declaration of top-level module interface
+// Device      : xc7a100tcsg324-1
+// --------------------------------------------------------------------------------
+
+// This empty module with port declaration file causes synthesis tools to infer a black box for IP.
+// The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
+// Please paste the declaration into a Verilog source file or add the file as an additional source.
+module SCPU_mySCPUctrl(clk, rst, MIO_ready, inst_in, Data_in, CPU_MIO, 
+  MemRW, PC_out, Data_out, Addr_out)
+/* synthesis syn_black_box black_box_pad_pin="rst,MIO_ready,inst_in[31:0],Data_in[31:0],CPU_MIO,MemRW,PC_out[31:0],Data_out[31:0],Addr_out[31:0]" */
+/* synthesis syn_force_seq_prim="clk" */;
+  input clk /* synthesis syn_isclock = 1 */;
+  input rst;
+  input MIO_ready;
+  input [31:0]inst_in;
+  input [31:0]Data_in;
+  output CPU_MIO;
+  output MemRW;
+  output [31:0]PC_out;
+  output [31:0]Data_out;
+  output [31:0]Addr_out;
+endmodule
