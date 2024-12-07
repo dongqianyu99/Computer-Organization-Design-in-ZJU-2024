@@ -1,0 +1,8 @@
+verilog xil_defaultlib  \
+"../../../../OExp04-IP2CPU.gen/sources_1/ip/Regs_0/src/Regs.v" \
+"../../../../OExp04-IP2CPU.gen/sources_1/ip/Regs_0/sim/Regs_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

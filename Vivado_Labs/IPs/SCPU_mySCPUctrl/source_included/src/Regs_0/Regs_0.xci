@@ -5,7 +5,7 @@
     "cell_name": "my_DataPath_0/Regs",
     "component_reference": "xilinx.com:user:Regs:1.0",
     "ip_revision": "2",
-    "gen_directory": "../../../../../vivado_labs/ips/scpu_myscpuctrl/tmp_edit_project.gen/sources_1/ip/Regs_0",
+    "gen_directory": "../../../../../../vivado_labs/ips/scpu_myscpuctrl/source_included/tmp_edit_project.gen/sources_1/ip/Regs_0",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "Regs_0", "resolve_type": "user", "usage": "all" } ]
@@ -27,7 +27,7 @@
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
         "IPREVISION": [ { "value": "2" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../vivado_labs/ips/scpu_myscpuctrl/tmp_edit_project.gen/sources_1/ip/Regs_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../vivado_labs/ips/scpu_myscpuctrl/source_included/tmp_edit_project.gen/sources_1/ip/Regs_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
         "SWVERSION": [ { "value": "2023.2" } ],

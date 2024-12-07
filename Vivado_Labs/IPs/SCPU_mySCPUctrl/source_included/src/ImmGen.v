@@ -29,7 +29,7 @@ module ImmGen(
     always @(*) begin
         case (ImmSel)
             2'b00: Imm_out = {{20{inst_field[31]}}, inst_field[31: 20]};  // I-type
-            2'b01: Imm_out = {{20{inst_field[31]}}, inst_field[31: 25]};  // S-type
+            2'b01: Imm_out = {{20{inst_field[31]}}, inst_field[31: 25], inst_field[11: 7]};  // S-type
             2'b10: Imm_out = {{19{inst_field[31]}}, inst_field[31], inst_field[7], inst_field[30: 25], inst_field[11: 8], 1'b0};  // B-type
             2'b11: Imm_out = {{11{inst_field[31]}}, inst_field[31], inst_field[19: 12], inst_field[20], inst_field[30: 21], 1'b0}; // J-type
         endcase

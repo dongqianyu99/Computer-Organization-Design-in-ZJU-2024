@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../OExp04-IP2CPU.srcs/sources_1/new/my_SCPU_ctrl.v" \
+"../../../../OExp04-IP2CPU.srcs/sim_1/new/my_SCPU_ctrl_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

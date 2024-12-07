@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Dec  7 22:42:21 2024
+# Process ID: 3700
+# Current directory: D:/Vivado_Labs/Lab4/OExp04-IP2CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27500 D:\Vivado_Labs\Lab4\OExp04-IP2CPU\OExp04-IP2CPU.xpr
+# Log file: D:/Vivado_Labs/Lab4/OExp04-IP2CPU/vivado.log
+# Journal file: D:/Vivado_Labs/Lab4/OExp04-IP2CPU\vivado.jou
+# Running On: Lee, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16849 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado_Labs/Lab4/OExp04-IP2CPU/OExp04-IP2CPU.xpr
+update_compile_order -fileset sources_1
