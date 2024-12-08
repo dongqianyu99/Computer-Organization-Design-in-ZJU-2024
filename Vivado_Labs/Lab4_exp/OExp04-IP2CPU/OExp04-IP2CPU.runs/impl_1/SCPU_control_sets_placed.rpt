@@ -1,0 +1,112 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Sun Dec  8 15:40:12 2024
+| Host         : Lee running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SCPU_control_sets_placed.rpt
+| Design       : SCPU
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    34 |
+|    Minimum number of control sets                        |    34 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     5 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    34 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    33 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              35 |           24 |
+| No           | No                    | Yes                    |              32 |           12 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             992 |          435 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+--------------------------------------------------+------------------+------------------+----------------+--------------+
+|                Clock Signal                |                   Enable Signal                  | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------------------+--------------------------------------------------+------------------+------------------+----------------+--------------+
+|  my_SCPU_ctrl_0/ALU_Control_reg[2]_i_2_n_0 |                                                  |                  |                2 |              3 |         1.50 |
+|  my_SCPU_ctrl_0/E[0]                       |                                                  |                  |               22 |             32 |         1.45 |
+|  clk                                       |                                                  | rst              |               12 |             32 |         2.67 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[1][31]_i_1_n_0  | rst              |               11 |             32 |         2.91 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[25][31]_i_1_n_0 | rst              |                9 |             32 |         3.56 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[11][31]_i_1_n_0 | rst              |               15 |             32 |         2.13 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[13][31]_i_1_n_0 | rst              |               13 |             32 |         2.46 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[2][31]_i_1_n_0  | rst              |               13 |             32 |         2.46 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[4][31]_i_1_n_0  | rst              |               15 |             32 |         2.13 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[8][31]_i_1_n_0  | rst              |               18 |             32 |         1.78 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[6][31]_i_1_n_0  | rst              |               21 |             32 |         1.52 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[14][31]_i_1_n_0 | rst              |               13 |             32 |         2.46 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[28][31]_i_1_n_0 | rst              |               14 |             32 |         2.29 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[29][31]_i_1_n_0 | rst              |               15 |             32 |         2.13 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[9][31]_i_1_n_0  | rst              |               20 |             32 |         1.60 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[31][31]_i_1_n_0 | rst              |               18 |             32 |         1.78 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[15][31]_i_1_n_0 | rst              |               12 |             32 |         2.67 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[3][31]_i_1_n_0  | rst              |               20 |             32 |         1.60 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[23][31]_i_1_n_0 | rst              |               16 |             32 |         2.00 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[5][31]_i_1_n_0  | rst              |               16 |             32 |         2.00 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[19][31]_i_1_n_0 | rst              |                9 |             32 |         3.56 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[10][31]_i_1_n_0 | rst              |               11 |             32 |         2.91 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[24][31]_i_1_n_0 | rst              |               11 |             32 |         2.91 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[22][31]_i_1_n_0 | rst              |               11 |             32 |         2.91 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[18][31]_i_1_n_0 | rst              |               10 |             32 |         3.20 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[7][31]_i_1_n_0  | rst              |               22 |             32 |         1.45 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[26][31]_i_1_n_0 | rst              |               14 |             32 |         2.29 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[30][31]_i_1_n_0 | rst              |               17 |             32 |         1.88 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[20][31]_i_1_n_0 | rst              |               13 |             32 |         2.46 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[21][31]_i_1_n_0 | rst              |               12 |             32 |         2.67 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[12][31]_i_1_n_0 | rst              |               11 |             32 |         2.91 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[27][31]_i_1_n_0 | rst              |               15 |             32 |         2.13 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[16][31]_i_1_n_0 | rst              |               11 |             32 |         2.91 |
+|  clk                                       | my_DataPath_0/Regs/inst/register[17][31]_i_1_n_0 | rst              |                9 |             32 |         3.56 |
++--------------------------------------------+--------------------------------------------------+------------------+------------------+----------------+--------------+
+
+

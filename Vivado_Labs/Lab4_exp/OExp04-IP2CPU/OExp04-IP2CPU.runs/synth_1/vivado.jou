@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Dec  5 18:22:06 2024
-# Process ID: 20128
-# Current directory: D:/Vivado_Labs/Lab4/OExp04-IP2CPU/OExp04-IP2CPU.runs/synth_1
+# Start of session at: Sun Dec  8 15:38:53 2024
+# Process ID: 396
+# Current directory: D:/Vivado_Labs/Lab4_exp/OExp04-IP2CPU/OExp04-IP2CPU.runs/synth_1
 # Command line: vivado.exe -log SCPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SCPU.tcl
-# Log file: D:/Vivado_Labs/Lab4/OExp04-IP2CPU/OExp04-IP2CPU.runs/synth_1/SCPU.vds
-# Journal file: D:/Vivado_Labs/Lab4/OExp04-IP2CPU/OExp04-IP2CPU.runs/synth_1\vivado.jou
+# Log file: D:/Vivado_Labs/Lab4_exp/OExp04-IP2CPU/OExp04-IP2CPU.runs/synth_1/SCPU.vds
+# Journal file: D:/Vivado_Labs/Lab4_exp/OExp04-IP2CPU/OExp04-IP2CPU.runs/synth_1\vivado.jou
 # Running On: Lee, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16849 MB
 #-----------------------------------------------------------
 source SCPU.tcl -notrace

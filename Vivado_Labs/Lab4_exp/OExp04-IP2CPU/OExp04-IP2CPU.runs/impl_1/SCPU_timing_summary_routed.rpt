@@ -1,0 +1,814 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Sun Dec  8 15:40:37 2024
+| Host         : Lee running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file SCPU_timing_summary_routed.rpt -pb SCPU_timing_summary_routed.pb -rpx SCPU_timing_summary_routed.rpx -warn_on_violation
+| Design       : SCPU
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                     Violations  
+---------  ----------------  ------------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell     1000        
+TIMING-20  Warning           Non-clocked latch               35          
+LATCH-1    Advisory          Existing latches in the design  1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (1115)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (3075)
+5. checking no_input_delay (63)
+6. checking no_output_delay (96)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (1115)
+---------------------------
+ There are 1024 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: inst_in[12] (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: inst_in[13] (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: inst_in[14] (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: inst_in[2] (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: inst_in[30] (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: inst_in[3] (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: inst_in[4] (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: inst_in[5] (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: inst_in[6] (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: my_SCPU_ctrl_0/ALU_Control_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: my_SCPU_ctrl_0/ALU_Control_reg[2]/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (3075)
+---------------------------------------------------
+ There are 3075 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (63)
+-------------------------------
+ There are 63 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (96)
+--------------------------------
+ There are 96 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                 3172          inf        0.000                      0                 3172           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay          3172 Endpoints
+Min Delay          3172 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 inst_in[31]
+                            (input port)
+  Destination:            my_DataPath_0/ALU_0/res_reg[21]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.558ns  (logic 2.200ns (23.018%)  route 7.358ns (76.982%))
+  Logic Levels:           9  (CARRY4=3 LUT2=2 LUT3=2 LUT6=1 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  inst_in[31] (IN)
+                         net (fo=5, unset)            0.973     0.973    my_DataPath_0/add_32_1/inst_in[6]
+    SLICE_X11Y104        LUT6 (Prop_lut6_I5_O)        0.124     1.097 r  my_DataPath_0/add_32_1/MUX4T1_0_i_35/O
+                         net (fo=38, routed)          2.810     3.907    my_DataPath_0/add_32_1_n_35
+    SLICE_X4Y96          LUT3 (Prop_lut3_I2_O)        0.150     4.057 r  my_DataPath_0/MUX4T1_0_i_19/O
+                         net (fo=2, routed)           0.838     4.895    my_DataPath_0/MUX2T1_0/inst/I1[12]
+    SLICE_X4Y95          LUT3 (Prop_lut3_I0_O)        0.326     5.221 r  my_DataPath_0/MUX2T1_0/inst/o[12]_INST_0/O
+                         net (fo=5, routed)           1.552     6.773    my_DataPath_0/ALU_0/o[12]
+    SLICE_X10Y99         LUT2 (Prop_lut2_I1_O)        0.124     6.897 r  my_DataPath_0/ALU_0/i__carry__2_i_4__1/O
+                         net (fo=1, routed)           0.000     6.897    my_DataPath_0/ALU_0/i__carry__2_i_4__1_n_0
+    SLICE_X10Y99         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     7.410 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.001     7.410    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2_n_0
+    SLICE_X10Y100        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.527 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3/CO[3]
+                         net (fo=1, routed)           0.000     7.527    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3_n_0
+    SLICE_X10Y101        CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     7.850 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4/O[1]
+                         net (fo=1, routed)           1.184     9.035    my_DataPath_0/ALU_0/data4[21]
+    SLICE_X7Y103         LUT2 (Prop_lut2_I0_O)        0.306     9.341 r  my_DataPath_0/ALU_0/res_reg[21]_i_3/O
+                         net (fo=1, routed)           0.000     9.341    my_DataPath_0/ALU_0/res_reg[21]_i_3_n_0
+    SLICE_X7Y103         MUXF7 (Prop_muxf7_I1_O)      0.217     9.558 r  my_DataPath_0/ALU_0/res_reg[21]_i_1/O
+                         net (fo=1, routed)           0.000     9.558    my_DataPath_0/ALU_0/res_reg[21]_i_1_n_0
+    SLICE_X7Y103         LDCE                                         r  my_DataPath_0/ALU_0/res_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 inst_in[31]
+                            (input port)
+  Destination:            my_DataPath_0/ALU_0/res_reg[31]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.447ns  (logic 2.455ns (25.987%)  route 6.992ns (74.013%))
+  Logic Levels:           11  (CARRY4=5 LUT2=2 LUT3=2 LUT6=1 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  inst_in[31] (IN)
+                         net (fo=5, unset)            0.973     0.973    my_DataPath_0/add_32_1/inst_in[6]
+    SLICE_X11Y104        LUT6 (Prop_lut6_I5_O)        0.124     1.097 r  my_DataPath_0/add_32_1/MUX4T1_0_i_35/O
+                         net (fo=38, routed)          2.810     3.907    my_DataPath_0/add_32_1_n_35
+    SLICE_X4Y96          LUT3 (Prop_lut3_I2_O)        0.150     4.057 r  my_DataPath_0/MUX4T1_0_i_19/O
+                         net (fo=2, routed)           0.838     4.895    my_DataPath_0/MUX2T1_0/inst/I1[12]
+    SLICE_X4Y95          LUT3 (Prop_lut3_I0_O)        0.326     5.221 r  my_DataPath_0/MUX2T1_0/inst/o[12]_INST_0/O
+                         net (fo=5, routed)           1.552     6.773    my_DataPath_0/ALU_0/o[12]
+    SLICE_X10Y99         LUT2 (Prop_lut2_I1_O)        0.124     6.897 r  my_DataPath_0/ALU_0/i__carry__2_i_4__1/O
+                         net (fo=1, routed)           0.000     6.897    my_DataPath_0/ALU_0/i__carry__2_i_4__1_n_0
+    SLICE_X10Y99         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     7.410 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.001     7.410    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2_n_0
+    SLICE_X10Y100        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.527 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3/CO[3]
+                         net (fo=1, routed)           0.000     7.527    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3_n_0
+    SLICE_X10Y101        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.644 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4/CO[3]
+                         net (fo=1, routed)           0.000     7.644    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4_n_0
+    SLICE_X10Y102        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.761 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__5/CO[3]
+                         net (fo=1, routed)           0.000     7.761    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__5_n_0
+    SLICE_X10Y103        CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315     8.076 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__6/O[3]
+                         net (fo=1, routed)           0.818     8.895    my_DataPath_0/ALU_0/data4[31]
+    SLICE_X9Y103         LUT2 (Prop_lut2_I0_O)        0.307     9.202 r  my_DataPath_0/ALU_0/res_reg[31]_i_4/O
+                         net (fo=1, routed)           0.000     9.202    my_DataPath_0/ALU_0/res_reg[31]_i_4_n_0
+    SLICE_X9Y103         MUXF7 (Prop_muxf7_I1_O)      0.245     9.447 r  my_DataPath_0/ALU_0/res_reg[31]_i_1/O
+                         net (fo=1, routed)           0.000     9.447    my_DataPath_0/ALU_0/res_reg[31]_i_1_n_0
+    SLICE_X9Y103         LDCE                                         r  my_DataPath_0/ALU_0/res_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 inst_in[31]
+                            (input port)
+  Destination:            my_DataPath_0/ALU_0/res_reg[25]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.354ns  (logic 2.345ns (25.070%)  route 7.009ns (74.930%))
+  Logic Levels:           10  (CARRY4=4 LUT2=2 LUT3=2 LUT6=1 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  inst_in[31] (IN)
+                         net (fo=5, unset)            0.973     0.973    my_DataPath_0/add_32_1/inst_in[6]
+    SLICE_X11Y104        LUT6 (Prop_lut6_I5_O)        0.124     1.097 r  my_DataPath_0/add_32_1/MUX4T1_0_i_35/O
+                         net (fo=38, routed)          2.810     3.907    my_DataPath_0/add_32_1_n_35
+    SLICE_X4Y96          LUT3 (Prop_lut3_I2_O)        0.150     4.057 r  my_DataPath_0/MUX4T1_0_i_19/O
+                         net (fo=2, routed)           0.838     4.895    my_DataPath_0/MUX2T1_0/inst/I1[12]
+    SLICE_X4Y95          LUT3 (Prop_lut3_I0_O)        0.326     5.221 r  my_DataPath_0/MUX2T1_0/inst/o[12]_INST_0/O
+                         net (fo=5, routed)           1.552     6.773    my_DataPath_0/ALU_0/o[12]
+    SLICE_X10Y99         LUT2 (Prop_lut2_I1_O)        0.124     6.897 r  my_DataPath_0/ALU_0/i__carry__2_i_4__1/O
+                         net (fo=1, routed)           0.000     6.897    my_DataPath_0/ALU_0/i__carry__2_i_4__1_n_0
+    SLICE_X10Y99         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     7.410 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.001     7.410    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2_n_0
+    SLICE_X10Y100        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.527 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3/CO[3]
+                         net (fo=1, routed)           0.000     7.527    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3_n_0
+    SLICE_X10Y101        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.644 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4/CO[3]
+                         net (fo=1, routed)           0.000     7.644    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4_n_0
+    SLICE_X10Y102        CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     7.967 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__5/O[1]
+                         net (fo=1, routed)           0.835     8.803    my_DataPath_0/ALU_0/data4[25]
+    SLICE_X7Y103         LUT2 (Prop_lut2_I0_O)        0.306     9.109 r  my_DataPath_0/ALU_0/res_reg[25]_i_3/O
+                         net (fo=1, routed)           0.000     9.109    my_DataPath_0/ALU_0/res_reg[25]_i_3_n_0
+    SLICE_X7Y103         MUXF7 (Prop_muxf7_I1_O)      0.245     9.354 r  my_DataPath_0/ALU_0/res_reg[25]_i_1/O
+                         net (fo=1, routed)           0.000     9.354    my_DataPath_0/ALU_0/res_reg[25]_i_1_n_0
+    SLICE_X7Y103         LDCE                                         r  my_DataPath_0/ALU_0/res_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 inst_in[31]
+                            (input port)
+  Destination:            my_DataPath_0/ALU_0/res_reg[28]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.318ns  (logic 2.319ns (24.886%)  route 6.999ns (75.114%))
+  Logic Levels:           11  (CARRY4=5 LUT2=2 LUT3=2 LUT6=1 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  inst_in[31] (IN)
+                         net (fo=5, unset)            0.973     0.973    my_DataPath_0/add_32_1/inst_in[6]
+    SLICE_X11Y104        LUT6 (Prop_lut6_I5_O)        0.124     1.097 r  my_DataPath_0/add_32_1/MUX4T1_0_i_35/O
+                         net (fo=38, routed)          2.810     3.907    my_DataPath_0/add_32_1_n_35
+    SLICE_X4Y96          LUT3 (Prop_lut3_I2_O)        0.150     4.057 r  my_DataPath_0/MUX4T1_0_i_19/O
+                         net (fo=2, routed)           0.838     4.895    my_DataPath_0/MUX2T1_0/inst/I1[12]
+    SLICE_X4Y95          LUT3 (Prop_lut3_I0_O)        0.326     5.221 r  my_DataPath_0/MUX2T1_0/inst/o[12]_INST_0/O
+                         net (fo=5, routed)           1.552     6.773    my_DataPath_0/ALU_0/o[12]
+    SLICE_X10Y99         LUT2 (Prop_lut2_I1_O)        0.124     6.897 r  my_DataPath_0/ALU_0/i__carry__2_i_4__1/O
+                         net (fo=1, routed)           0.000     6.897    my_DataPath_0/ALU_0/i__carry__2_i_4__1_n_0
+    SLICE_X10Y99         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     7.410 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.001     7.410    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2_n_0
+    SLICE_X10Y100        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.527 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3/CO[3]
+                         net (fo=1, routed)           0.000     7.527    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3_n_0
+    SLICE_X10Y101        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.644 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4/CO[3]
+                         net (fo=1, routed)           0.000     7.644    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4_n_0
+    SLICE_X10Y102        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.761 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__5/CO[3]
+                         net (fo=1, routed)           0.000     7.761    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__5_n_0
+    SLICE_X10Y103        CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     7.980 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__6/O[0]
+                         net (fo=1, routed)           0.826     8.806    my_DataPath_0/ALU_0/data4[28]
+    SLICE_X9Y104         LUT2 (Prop_lut2_I0_O)        0.295     9.101 r  my_DataPath_0/ALU_0/res_reg[28]_i_3/O
+                         net (fo=1, routed)           0.000     9.101    my_DataPath_0/ALU_0/res_reg[28]_i_3_n_0
+    SLICE_X9Y104         MUXF7 (Prop_muxf7_I1_O)      0.217     9.318 r  my_DataPath_0/ALU_0/res_reg[28]_i_1/O
+                         net (fo=1, routed)           0.000     9.318    my_DataPath_0/ALU_0/res_reg[28]_i_1_n_0
+    SLICE_X9Y104         LDCE                                         r  my_DataPath_0/ALU_0/res_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 inst_in[31]
+                            (input port)
+  Destination:            my_DataPath_0/ALU_0/res_reg[29]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.202ns  (logic 2.431ns (26.419%)  route 6.771ns (73.581%))
+  Logic Levels:           11  (CARRY4=5 LUT2=2 LUT3=2 LUT6=1 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  inst_in[31] (IN)
+                         net (fo=5, unset)            0.973     0.973    my_DataPath_0/add_32_1/inst_in[6]
+    SLICE_X11Y104        LUT6 (Prop_lut6_I5_O)        0.124     1.097 r  my_DataPath_0/add_32_1/MUX4T1_0_i_35/O
+                         net (fo=38, routed)          2.810     3.907    my_DataPath_0/add_32_1_n_35
+    SLICE_X4Y96          LUT3 (Prop_lut3_I2_O)        0.150     4.057 r  my_DataPath_0/MUX4T1_0_i_19/O
+                         net (fo=2, routed)           0.838     4.895    my_DataPath_0/MUX2T1_0/inst/I1[12]
+    SLICE_X4Y95          LUT3 (Prop_lut3_I0_O)        0.326     5.221 r  my_DataPath_0/MUX2T1_0/inst/o[12]_INST_0/O
+                         net (fo=5, routed)           1.552     6.773    my_DataPath_0/ALU_0/o[12]
+    SLICE_X10Y99         LUT2 (Prop_lut2_I1_O)        0.124     6.897 r  my_DataPath_0/ALU_0/i__carry__2_i_4__1/O
+                         net (fo=1, routed)           0.000     6.897    my_DataPath_0/ALU_0/i__carry__2_i_4__1_n_0
+    SLICE_X10Y99         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     7.410 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.001     7.410    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2_n_0
+    SLICE_X10Y100        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.527 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3/CO[3]
+                         net (fo=1, routed)           0.000     7.527    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3_n_0
+    SLICE_X10Y101        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.644 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4/CO[3]
+                         net (fo=1, routed)           0.000     7.644    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4_n_0
+    SLICE_X10Y102        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.761 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__5/CO[3]
+                         net (fo=1, routed)           0.000     7.761    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__5_n_0
+    SLICE_X10Y103        CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     8.084 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__6/O[1]
+                         net (fo=1, routed)           0.597     8.682    my_DataPath_0/ALU_0/data4[29]
+    SLICE_X10Y104        LUT2 (Prop_lut2_I0_O)        0.306     8.988 r  my_DataPath_0/ALU_0/res_reg[29]_i_3/O
+                         net (fo=1, routed)           0.000     8.988    my_DataPath_0/ALU_0/res_reg[29]_i_3_n_0
+    SLICE_X10Y104        MUXF7 (Prop_muxf7_I1_O)      0.214     9.202 r  my_DataPath_0/ALU_0/res_reg[29]_i_1/O
+                         net (fo=1, routed)           0.000     9.202    my_DataPath_0/ALU_0/res_reg[29]_i_1_n_0
+    SLICE_X10Y104        LDCE                                         r  my_DataPath_0/ALU_0/res_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 inst_in[31]
+                            (input port)
+  Destination:            my_DataPath_0/ALU_0/res_reg[17]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.191ns  (logic 2.111ns (22.968%)  route 7.080ns (77.032%))
+  Logic Levels:           8  (CARRY4=2 LUT2=2 LUT3=2 LUT6=1 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  inst_in[31] (IN)
+                         net (fo=5, unset)            0.973     0.973    my_DataPath_0/add_32_1/inst_in[6]
+    SLICE_X11Y104        LUT6 (Prop_lut6_I5_O)        0.124     1.097 r  my_DataPath_0/add_32_1/MUX4T1_0_i_35/O
+                         net (fo=38, routed)          2.810     3.907    my_DataPath_0/add_32_1_n_35
+    SLICE_X4Y96          LUT3 (Prop_lut3_I2_O)        0.150     4.057 r  my_DataPath_0/MUX4T1_0_i_19/O
+                         net (fo=2, routed)           0.838     4.895    my_DataPath_0/MUX2T1_0/inst/I1[12]
+    SLICE_X4Y95          LUT3 (Prop_lut3_I0_O)        0.326     5.221 r  my_DataPath_0/MUX2T1_0/inst/o[12]_INST_0/O
+                         net (fo=5, routed)           1.552     6.773    my_DataPath_0/ALU_0/o[12]
+    SLICE_X10Y99         LUT2 (Prop_lut2_I1_O)        0.124     6.897 r  my_DataPath_0/ALU_0/i__carry__2_i_4__1/O
+                         net (fo=1, routed)           0.000     6.897    my_DataPath_0/ALU_0/i__carry__2_i_4__1_n_0
+    SLICE_X10Y99         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     7.410 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.001     7.410    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2_n_0
+    SLICE_X10Y100        CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     7.733 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3/O[1]
+                         net (fo=1, routed)           0.906     8.640    my_DataPath_0/ALU_0/data4[17]
+    SLICE_X7Y99          LUT2 (Prop_lut2_I0_O)        0.306     8.946 r  my_DataPath_0/ALU_0/res_reg[17]_i_3/O
+                         net (fo=1, routed)           0.000     8.946    my_DataPath_0/ALU_0/res_reg[17]_i_3_n_0
+    SLICE_X7Y99          MUXF7 (Prop_muxf7_I1_O)      0.245     9.191 r  my_DataPath_0/ALU_0/res_reg[17]_i_1/O
+                         net (fo=1, routed)           0.000     9.191    my_DataPath_0/ALU_0/res_reg[17]_i_1_n_0
+    SLICE_X7Y99          LDCE                                         r  my_DataPath_0/ALU_0/res_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 inst_in[31]
+                            (input port)
+  Destination:            my_DataPath_0/ALU_0/res_reg[30]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.165ns  (logic 2.345ns (25.587%)  route 6.820ns (74.413%))
+  Logic Levels:           11  (CARRY4=5 LUT2=2 LUT3=2 LUT6=1 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  inst_in[31] (IN)
+                         net (fo=5, unset)            0.973     0.973    my_DataPath_0/add_32_1/inst_in[6]
+    SLICE_X11Y104        LUT6 (Prop_lut6_I5_O)        0.124     1.097 r  my_DataPath_0/add_32_1/MUX4T1_0_i_35/O
+                         net (fo=38, routed)          2.810     3.907    my_DataPath_0/add_32_1_n_35
+    SLICE_X4Y96          LUT3 (Prop_lut3_I2_O)        0.150     4.057 r  my_DataPath_0/MUX4T1_0_i_19/O
+                         net (fo=2, routed)           0.838     4.895    my_DataPath_0/MUX2T1_0/inst/I1[12]
+    SLICE_X4Y95          LUT3 (Prop_lut3_I0_O)        0.326     5.221 r  my_DataPath_0/MUX2T1_0/inst/o[12]_INST_0/O
+                         net (fo=5, routed)           1.552     6.773    my_DataPath_0/ALU_0/o[12]
+    SLICE_X10Y99         LUT2 (Prop_lut2_I1_O)        0.124     6.897 r  my_DataPath_0/ALU_0/i__carry__2_i_4__1/O
+                         net (fo=1, routed)           0.000     6.897    my_DataPath_0/ALU_0/i__carry__2_i_4__1_n_0
+    SLICE_X10Y99         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     7.410 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.001     7.410    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2_n_0
+    SLICE_X10Y100        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.527 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3/CO[3]
+                         net (fo=1, routed)           0.000     7.527    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3_n_0
+    SLICE_X10Y101        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.644 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4/CO[3]
+                         net (fo=1, routed)           0.000     7.644    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4_n_0
+    SLICE_X10Y102        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.761 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__5/CO[3]
+                         net (fo=1, routed)           0.000     7.761    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__5_n_0
+    SLICE_X10Y103        CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     8.000 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__6/O[2]
+                         net (fo=1, routed)           0.646     8.647    my_DataPath_0/ALU_0/data4[30]
+    SLICE_X9Y103         LUT2 (Prop_lut2_I0_O)        0.301     8.948 r  my_DataPath_0/ALU_0/res_reg[30]_i_3/O
+                         net (fo=1, routed)           0.000     8.948    my_DataPath_0/ALU_0/res_reg[30]_i_3_n_0
+    SLICE_X9Y103         MUXF7 (Prop_muxf7_I1_O)      0.217     9.165 r  my_DataPath_0/ALU_0/res_reg[30]_i_1/O
+                         net (fo=1, routed)           0.000     9.165    my_DataPath_0/ALU_0/res_reg[30]_i_1_n_0
+    SLICE_X9Y103         LDCE                                         r  my_DataPath_0/ALU_0/res_reg[30]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 inst_in[31]
+                            (input port)
+  Destination:            my_DataPath_0/ALU_0/res_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.163ns  (logic 1.691ns (18.454%)  route 7.472ns (81.546%))
+  Logic Levels:           9  (CARRY4=3 LUT3=3 LUT4=1 LUT6=1 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  inst_in[31] (IN)
+                         net (fo=5, unset)            0.973     0.973    my_DataPath_0/add_32_1/inst_in[6]
+    SLICE_X11Y104        LUT6 (Prop_lut6_I5_O)        0.124     1.097 r  my_DataPath_0/add_32_1/MUX4T1_0_i_35/O
+                         net (fo=38, routed)          2.810     3.907    my_DataPath_0/add_32_1_n_35
+    SLICE_X4Y96          LUT3 (Prop_lut3_I2_O)        0.150     4.057 r  my_DataPath_0/MUX4T1_0_i_19/O
+                         net (fo=2, routed)           0.838     4.895    my_DataPath_0/MUX2T1_0/inst/I1[12]
+    SLICE_X4Y95          LUT3 (Prop_lut3_I0_O)        0.326     5.221 r  my_DataPath_0/MUX2T1_0/inst/o[12]_INST_0/O
+                         net (fo=5, routed)           1.766     6.987    my_DataPath_0/ALU_0/o[12]
+    SLICE_X11Y99         LUT4 (Prop_lut4_I0_O)        0.124     7.111 r  my_DataPath_0/ALU_0/i__carry__0_i_6/O
+                         net (fo=1, routed)           0.000     7.111    my_DataPath_0/ALU_0/i__carry__0_i_6_n_0
+    SLICE_X11Y99         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     7.509 r  my_DataPath_0/ALU_0/res0_inferred__4/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.001     7.509    my_DataPath_0/ALU_0/res0_inferred__4/i__carry__0_n_0
+    SLICE_X11Y100        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.623 r  my_DataPath_0/ALU_0/res0_inferred__4/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.623    my_DataPath_0/ALU_0/res0_inferred__4/i__carry__1_n_0
+    SLICE_X11Y101        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.737 r  my_DataPath_0/ALU_0/res0_inferred__4/i__carry__2/CO[3]
+                         net (fo=1, routed)           1.085     8.822    my_DataPath_0/ALU_0/data5
+    SLICE_X9Y96          LUT3 (Prop_lut3_I0_O)        0.124     8.946 r  my_DataPath_0/ALU_0/res_reg[0]_i_3/O
+                         net (fo=1, routed)           0.000     8.946    my_DataPath_0/ALU_0/res_reg[0]_i_3_n_0
+    SLICE_X9Y96          MUXF7 (Prop_muxf7_I1_O)      0.217     9.163 r  my_DataPath_0/ALU_0/res_reg[0]_i_1/O
+                         net (fo=1, routed)           0.000     9.163    my_DataPath_0/ALU_0/res_reg[0]_i_1_n_0
+    SLICE_X9Y96          LDCE                                         r  my_DataPath_0/ALU_0/res_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 inst_in[31]
+                            (input port)
+  Destination:            my_DataPath_0/ALU_0/res_reg[26]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.146ns  (logic 2.225ns (24.328%)  route 6.921ns (75.672%))
+  Logic Levels:           10  (CARRY4=4 LUT2=2 LUT3=2 LUT6=1 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  inst_in[31] (IN)
+                         net (fo=5, unset)            0.973     0.973    my_DataPath_0/add_32_1/inst_in[6]
+    SLICE_X11Y104        LUT6 (Prop_lut6_I5_O)        0.124     1.097 r  my_DataPath_0/add_32_1/MUX4T1_0_i_35/O
+                         net (fo=38, routed)          2.810     3.907    my_DataPath_0/add_32_1_n_35
+    SLICE_X4Y96          LUT3 (Prop_lut3_I2_O)        0.150     4.057 r  my_DataPath_0/MUX4T1_0_i_19/O
+                         net (fo=2, routed)           0.838     4.895    my_DataPath_0/MUX2T1_0/inst/I1[12]
+    SLICE_X4Y95          LUT3 (Prop_lut3_I0_O)        0.326     5.221 r  my_DataPath_0/MUX2T1_0/inst/o[12]_INST_0/O
+                         net (fo=5, routed)           1.552     6.773    my_DataPath_0/ALU_0/o[12]
+    SLICE_X10Y99         LUT2 (Prop_lut2_I1_O)        0.124     6.897 r  my_DataPath_0/ALU_0/i__carry__2_i_4__1/O
+                         net (fo=1, routed)           0.000     6.897    my_DataPath_0/ALU_0/i__carry__2_i_4__1_n_0
+    SLICE_X10Y99         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     7.410 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.001     7.410    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2_n_0
+    SLICE_X10Y100        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.527 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3/CO[3]
+                         net (fo=1, routed)           0.000     7.527    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3_n_0
+    SLICE_X10Y101        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.644 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4/CO[3]
+                         net (fo=1, routed)           0.000     7.644    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4_n_0
+    SLICE_X10Y102        CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     7.883 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__5/O[2]
+                         net (fo=1, routed)           0.747     8.631    my_DataPath_0/ALU_0/data4[26]
+    SLICE_X8Y104         LUT2 (Prop_lut2_I0_O)        0.301     8.932 r  my_DataPath_0/ALU_0/res_reg[26]_i_3/O
+                         net (fo=1, routed)           0.000     8.932    my_DataPath_0/ALU_0/res_reg[26]_i_3_n_0
+    SLICE_X8Y104         MUXF7 (Prop_muxf7_I1_O)      0.214     9.146 r  my_DataPath_0/ALU_0/res_reg[26]_i_1/O
+                         net (fo=1, routed)           0.000     9.146    my_DataPath_0/ALU_0/res_reg[26]_i_1_n_0
+    SLICE_X8Y104         LDCE                                         r  my_DataPath_0/ALU_0/res_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 inst_in[31]
+                            (input port)
+  Destination:            my_DataPath_0/ALU_0/res_reg[27]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.120ns  (logic 2.310ns (25.328%)  route 6.810ns (74.672%))
+  Logic Levels:           10  (CARRY4=4 LUT2=2 LUT3=2 LUT6=1 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  inst_in[31] (IN)
+                         net (fo=5, unset)            0.973     0.973    my_DataPath_0/add_32_1/inst_in[6]
+    SLICE_X11Y104        LUT6 (Prop_lut6_I5_O)        0.124     1.097 r  my_DataPath_0/add_32_1/MUX4T1_0_i_35/O
+                         net (fo=38, routed)          2.810     3.907    my_DataPath_0/add_32_1_n_35
+    SLICE_X4Y96          LUT3 (Prop_lut3_I2_O)        0.150     4.057 r  my_DataPath_0/MUX4T1_0_i_19/O
+                         net (fo=2, routed)           0.838     4.895    my_DataPath_0/MUX2T1_0/inst/I1[12]
+    SLICE_X4Y95          LUT3 (Prop_lut3_I0_O)        0.326     5.221 r  my_DataPath_0/MUX2T1_0/inst/o[12]_INST_0/O
+                         net (fo=5, routed)           1.552     6.773    my_DataPath_0/ALU_0/o[12]
+    SLICE_X10Y99         LUT2 (Prop_lut2_I1_O)        0.124     6.897 r  my_DataPath_0/ALU_0/i__carry__2_i_4__1/O
+                         net (fo=1, routed)           0.000     6.897    my_DataPath_0/ALU_0/i__carry__2_i_4__1_n_0
+    SLICE_X10Y99         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     7.410 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.001     7.410    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__2_n_0
+    SLICE_X10Y100        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.527 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3/CO[3]
+                         net (fo=1, routed)           0.000     7.527    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__3_n_0
+    SLICE_X10Y101        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.644 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4/CO[3]
+                         net (fo=1, routed)           0.000     7.644    my_DataPath_0/ALU_0/res0_inferred__3/i__carry__4_n_0
+    SLICE_X10Y102        CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315     7.959 r  my_DataPath_0/ALU_0/res0_inferred__3/i__carry__5/O[3]
+                         net (fo=1, routed)           0.637     8.596    my_DataPath_0/ALU_0/data4[27]
+    SLICE_X11Y103        LUT2 (Prop_lut2_I0_O)        0.307     8.903 r  my_DataPath_0/ALU_0/res_reg[27]_i_3/O
+                         net (fo=1, routed)           0.000     8.903    my_DataPath_0/ALU_0/res_reg[27]_i_3_n_0
+    SLICE_X11Y103        MUXF7 (Prop_muxf7_I1_O)      0.217     9.120 r  my_DataPath_0/ALU_0/res_reg[27]_i_1/O
+                         net (fo=1, routed)           0.000     9.120    my_DataPath_0/ALU_0/res_reg[27]_i_1_n_0
+    SLICE_X11Y103        LDCE                                         r  my_DataPath_0/ALU_0/res_reg[27]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 rst
+                            (input port)
+  Destination:            my_DataPath_0/PC/Q_reg[0]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.410ns  (logic 0.000ns (0.000%)  route 0.410ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  rst (IN)
+                         net (fo=1023, unset)         0.410     0.410    my_DataPath_0/PC/rst
+    SLICE_X7Y95          FDCE                                         f  my_DataPath_0/PC/Q_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rst
+                            (input port)
+  Destination:            my_DataPath_0/PC/Q_reg[10]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.410ns  (logic 0.000ns (0.000%)  route 0.410ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  rst (IN)
+                         net (fo=1023, unset)         0.410     0.410    my_DataPath_0/PC/rst
+    SLICE_X4Y97          FDCE                                         f  my_DataPath_0/PC/Q_reg[10]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rst
+                            (input port)
+  Destination:            my_DataPath_0/PC/Q_reg[11]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.410ns  (logic 0.000ns (0.000%)  route 0.410ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  rst (IN)
+                         net (fo=1023, unset)         0.410     0.410    my_DataPath_0/PC/rst
+    SLICE_X4Y97          FDCE                                         f  my_DataPath_0/PC/Q_reg[11]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rst
+                            (input port)
+  Destination:            my_DataPath_0/PC/Q_reg[12]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.410ns  (logic 0.000ns (0.000%)  route 0.410ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  rst (IN)
+                         net (fo=1023, unset)         0.410     0.410    my_DataPath_0/PC/rst
+    SLICE_X4Y97          FDCE                                         f  my_DataPath_0/PC/Q_reg[12]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rst
+                            (input port)
+  Destination:            my_DataPath_0/PC/Q_reg[13]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.410ns  (logic 0.000ns (0.000%)  route 0.410ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  rst (IN)
+                         net (fo=1023, unset)         0.410     0.410    my_DataPath_0/PC/rst
+    SLICE_X4Y97          FDCE                                         f  my_DataPath_0/PC/Q_reg[13]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rst
+                            (input port)
+  Destination:            my_DataPath_0/PC/Q_reg[14]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.410ns  (logic 0.000ns (0.000%)  route 0.410ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  rst (IN)
+                         net (fo=1023, unset)         0.410     0.410    my_DataPath_0/PC/rst
+    SLICE_X4Y98          FDCE                                         f  my_DataPath_0/PC/Q_reg[14]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rst
+                            (input port)
+  Destination:            my_DataPath_0/PC/Q_reg[15]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.410ns  (logic 0.000ns (0.000%)  route 0.410ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  rst (IN)
+                         net (fo=1023, unset)         0.410     0.410    my_DataPath_0/PC/rst
+    SLICE_X4Y98          FDCE                                         f  my_DataPath_0/PC/Q_reg[15]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rst
+                            (input port)
+  Destination:            my_DataPath_0/PC/Q_reg[16]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.410ns  (logic 0.000ns (0.000%)  route 0.410ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  rst (IN)
+                         net (fo=1023, unset)         0.410     0.410    my_DataPath_0/PC/rst
+    SLICE_X2Y98          FDCE                                         f  my_DataPath_0/PC/Q_reg[16]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rst
+                            (input port)
+  Destination:            my_DataPath_0/PC/Q_reg[17]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.410ns  (logic 0.000ns (0.000%)  route 0.410ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  rst (IN)
+                         net (fo=1023, unset)         0.410     0.410    my_DataPath_0/PC/rst
+    SLICE_X2Y98          FDCE                                         f  my_DataPath_0/PC/Q_reg[17]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rst
+                            (input port)
+  Destination:            my_DataPath_0/PC/Q_reg[18]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.410ns  (logic 0.000ns (0.000%)  route 0.410ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  rst (IN)
+                         net (fo=1023, unset)         0.410     0.410    my_DataPath_0/PC/rst
+    SLICE_X4Y99          FDCE                                         f  my_DataPath_0/PC/Q_reg[18]/CLR
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
