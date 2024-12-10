@@ -133,7 +133,7 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.cache/wt [current_project]
   set_property parent.project_path D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.xpr [current_project]
   set_property ip_repo_paths {
-  D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/IPs
+  d:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/IPs
   D:/Vivado_Labs/IPs
 } [current_project]
   update_ip_catalog
@@ -147,7 +147,7 @@ OPTRACE "add files" START { }
   read_ip -quiet D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/Seg7_Dev_0/Seg7_Dev_0.xci
   read_ip -quiet D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/ROM_D_0/ROM_D_0.xci
   read_ip -quiet D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/RAM_B/RAM_B.xci
-  read_ip -quiet d:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SCPU_mySCPUctrl/SCPU_mySCPUctrl.xci
+  read_ip -quiet d:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/mySCPU/mySCPU.xci
   read_edif D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/clk_div.edf
   read_edif D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/SPIO.edf
   read_edif D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/SAnti_jitter.edf

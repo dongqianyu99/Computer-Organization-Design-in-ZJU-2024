@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Wed Sep 25 13:46:17 2024
+| Date             : Tue Dec 10 13:48:50 2024
 | Host             : Lee running 64-bit major release  (build 9200)
 | Command          : report_power -file CSSTE_power_routed.rpt -pb CSSTE_power_summary_routed.pb -rpx CSSTE_power_routed.rpx
 | Design           : CSSTE
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 58.993 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 59.183 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 58.196                           |
+| Dynamic (W)              | 58.386                           |
 | Device Static (W)        | 0.797                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,19 +52,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic              |     7.115 |     5315 |       --- |             --- |
-|   LUT as Logic           |     6.392 |     2400 |     63400 |            3.79 |
+| Slice Logic              |     7.067 |     5315 |       --- |             --- |
+|   LUT as Logic           |     6.345 |     2398 |     63400 |            3.78 |
 |   CARRY4                 |     0.400 |       97 |     15850 |            0.61 |
 |   Register               |     0.185 |     1441 |    126800 |            1.14 |
 |   F7/F8 Muxes            |     0.085 |      617 |     63400 |            0.97 |
 |   BUFG                   |     0.035 |        5 |        32 |           15.63 |
 |   LUT as Distributed RAM |     0.018 |      636 |     19000 |            3.35 |
 |   Others                 |     0.000 |       30 |       --- |             --- |
-| Signals                  |    16.141 |     3754 |       --- |             --- |
+| Signals                  |    16.379 |     3755 |       --- |             --- |
 | Block RAM                |     0.130 |        1 |       135 |            0.74 |
 | I/O                      |    34.811 |       64 |       210 |           30.48 |
 | Static Power             |     0.797 |          |           |                 |
-| Total                    |    58.993 |          |           |                 |
+| Total                    |    59.183 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |    24.006 |      23.443 |      0.563 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |    24.196 |      23.633 |      0.563 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     1.366 |       1.273 |      0.093 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     9.838 |       9.834 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -141,36 +141,36 @@ Table of Contents
 +-----------------------------------+-----------+
 | Name                              | Power (W) |
 +-----------------------------------+-----------+
-| CSSTE                             |    58.196 |
-|   U1                              |     7.154 |
-|     U1                            |     0.053 |
-|     U2                            |     7.097 |
-|       ALU_U                       |     0.171 |
-|       PC                          |     0.711 |
-|       Regs_U                      |     5.972 |
-|       add32_0                     |     0.084 |
-|       add32_1                     |     0.158 |
-|   U10                             |     3.337 |
-|   U11                             |     9.062 |
-|     inst__0                       |     9.062 |
-|       vga_controller              |     1.511 |
-|       vga_debugger                |     6.814 |
-|       vga_display                 |     0.737 |
-|   U2                              |     0.462 |
-|     U0                            |     0.462 |
-|       synth_options.dist_mem_inst |     0.462 |
-|   U3                              |     0.607 |
-|     U0                            |     0.607 |
-|       inst_blk_mem_gen            |     0.607 |
-|   U4                              |     0.815 |
-|   U5                              |     0.536 |
-|   U6                              |     0.690 |
+| CSSTE                             |    58.386 |
+|   U1                              |     6.959 |
+|     U1                            |     0.054 |
+|     U2                            |     6.902 |
+|       ALU_U                       |     0.177 |
+|       PC                          |     0.648 |
+|       Regs_U                      |     5.831 |
+|       add32_0                     |     0.086 |
+|       add32_1                     |     0.160 |
+|   U10                             |     3.354 |
+|   U11                             |     9.403 |
+|     inst__0                       |     9.403 |
+|       vga_controller              |     1.505 |
+|       vga_debugger                |     7.173 |
+|       vga_display                 |     0.725 |
+|   U2                              |     0.450 |
+|     U0                            |     0.450 |
+|       synth_options.dist_mem_inst |     0.450 |
+|   U3                              |     0.517 |
+|     U0                            |     0.517 |
+|       inst_blk_mem_gen            |     0.517 |
+|   U4                              |     1.001 |
+|   U5                              |     0.517 |
+|   U6                              |     0.684 |
 |     inst                          |     0.633 |
 |       U2                          |     0.633 |
-|   U7                              |     0.073 |
-|   U8                              |     0.418 |
-|   U9                              |     0.055 |
-|     u1                            |     0.055 |
+|   U7                              |     0.072 |
+|   U8                              |     0.399 |
+|   U9                              |     0.056 |
+|     u1                            |     0.056 |
 +-----------------------------------+-----------+
 
 

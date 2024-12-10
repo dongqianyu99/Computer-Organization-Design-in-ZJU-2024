@@ -94,6 +94,7 @@ OPTRACE "Adding files" START { }
 add_files D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/I_mem.coe
 add_files D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/D_mem.coe
 add_files D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/ROM.coe
+add_files d:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/ALU_instruction.coe
 read_verilog -library xil_defaultlib {
   D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/Counter_x.v
   D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/MIO_BUS.v
@@ -113,7 +114,7 @@ set_property used_in_implementation false [get_files -all d:/Vivado_Labs/Lab4_my
 read_ip -quiet D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/RAM_B/RAM_B.xci
 set_property used_in_implementation false [get_files -all d:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/RAM_B/RAM_B_ooc.xdc]
 
-read_ip -quiet d:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SCPU_mySCPUctrl/SCPU_mySCPUctrl.xci
+read_ip -quiet d:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/mySCPU/mySCPU.xci
 
 read_edif D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/clk_div.edf
 read_edif D:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/SPIO.edf

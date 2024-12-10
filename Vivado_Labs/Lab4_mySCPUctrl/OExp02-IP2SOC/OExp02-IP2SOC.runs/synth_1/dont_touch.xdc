@@ -15,16 +15,16 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ROM_D_0 || 
 # IP: ip/RAM_B/RAM_B.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==RAM_B || ORIG_REF_NAME==RAM_B} -quiet] -quiet
 
-# IP: ip/SCPU_mySCPUctrl/SCPU_mySCPUctrl.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SCPU_mySCPUctrl || ORIG_REF_NAME==SCPU_mySCPUctrl} -quiet] -quiet
+# IP: ip/mySCPU/mySCPU.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mySCPU || ORIG_REF_NAME==mySCPU} -quiet] -quiet
 
-# IP: d:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/Regs_0/Regs_0.xci
+# IP: d:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/mySCPU/src/Regs_0/Regs_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Regs_0 || ORIG_REF_NAME==Regs_0} -quiet] -quiet
 
-# IP: d:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/MUX2T1/MUX2T1.xci
+# IP: d:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/mySCPU/src/MUX2T1/MUX2T1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MUX2T1 || ORIG_REF_NAME==MUX2T1} -quiet] -quiet
 
-# IP: d:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/SCPU_mySCPUctrl/src/MUX4T1/MUX4T1.xci
+# IP: d:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/mySCPU/src/MUX4T1/MUX4T1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MUX4T1 || ORIG_REF_NAME==MUX4T1} -quiet] -quiet
 
 # XDC: d:/Vivado_Labs/Lab4_mySCPUctrl/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/ROM_D_0/ROM_D_0_ooc.xdc

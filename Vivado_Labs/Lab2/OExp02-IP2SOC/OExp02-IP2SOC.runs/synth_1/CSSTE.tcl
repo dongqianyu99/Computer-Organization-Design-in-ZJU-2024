@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
@@ -91,7 +92,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 add_files D:/Vivado_Labs/Lab2/OExp02-IP2SOC/I_mem.coe
 add_files D:/Vivado_Labs/Lab2/OExp02-IP2SOC/D_mem.coe
-add_files d:/Vivado_Labs/Lab2/OExp02-IP2SOC/ROM.coe
+add_files D:/Vivado_Labs/Lab2/OExp02-IP2SOC/ROM.coe
 read_verilog -library xil_defaultlib {
   D:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/Counter_x.v
   D:/Vivado_Labs/Lab2/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/MIO_BUS.v

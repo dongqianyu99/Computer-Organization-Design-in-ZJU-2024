@@ -82,20 +82,9 @@ module CSSTE(
     wire counter2_OUT_o;
     wire [31: 0] counter_out_o;
 
-    // SCPU U1(
-    //     .clk(Clk_CPU_o),
-    //     .rst(rst),
-    //     .Data_in(Cpu_data4bus_o),
-    //     .inst_in(spo_o),
-    //     .MemRW(MemRW_o),
-    //     .Addr_out(Addr_out_o),
-    //     .Data_out(Data_out_o),
-    //     .PC_out(PC_out_o)
-    // );
-
-    SCPU_mySCPUctrl U1(
+    mySCPU U1(
         .clk(Clk_CPU_o),
-        .rst(rst),
+        .rst(rst_o),
         .Data_in(Cpu_data4bus_o),
         .inst_in(spo_o),
         .MemRW(MemRW_o),
@@ -187,7 +176,7 @@ module CSSTE(
 
     clk_div U8(
         .clk(clk_100mhz),
-        .rst(rst),
+        .rst(rst_o),
         .SW2(SW_OK_o[2]),
         .SW8(SW_OK_o[8]),
         .STEP(SW_OK_o[10]),

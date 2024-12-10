@@ -84,7 +84,7 @@ module CSSTE(
 
     SCPU U1(
         .clk(Clk_CPU_o),
-        .rst(rst),
+        .rst(rst_o),
         .Data_in(Cpu_data4bus_o),
         .inst_in(spo_o),
         .MemRW(MemRW_o),
@@ -176,7 +176,7 @@ module CSSTE(
 
     clk_div U8(
         .clk(clk_100mhz),
-        .rst(rst),
+        .rst(rst_o),
         .SW2(SW_OK_o[2]),
         .SW8(SW_OK_o[8]),
         .STEP(SW_OK_o[10]),
