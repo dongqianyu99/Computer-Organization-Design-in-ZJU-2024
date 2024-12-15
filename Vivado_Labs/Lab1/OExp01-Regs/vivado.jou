@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Sep 18 20:11:28 2024
+# Process ID: 20248
+# Current directory: D:/Vivado_Labs/Lab1/OExp01-Regs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7304 D:\Vivado_Labs\Lab1\OExp01-Regs\OExp01-Regs.xpr
+# Log file: D:/Vivado_Labs/Lab1/OExp01-Regs/vivado.log
+# Journal file: D:/Vivado_Labs/Lab1/OExp01-Regs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado_Labs/Lab1/OExp01-Regs/OExp01-Regs.xpr
+update_compile_order -fileset sources_1

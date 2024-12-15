@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Dec  2 21:07:32 2024
+# Process ID: 23204
+# Current directory: D:/Vivado_Labs/Lab1/OExp01-ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32504 D:\Vivado_Labs\Lab1\OExp01-ALU\OExp01-ALU.xpr
+# Log file: D:/Vivado_Labs/Lab1/OExp01-ALU/vivado.log
+# Journal file: D:/Vivado_Labs/Lab1/OExp01-ALU\vivado.jou
+# Running On: Lee, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16849 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.xpr
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir D:/Vivado_Labs/IPs -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core d:/Vivado_Labs/IPs/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory D:/Vivado_Labs/IPs d:/Vivado_Labs/IPs/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {d:/Vivado_Labs/IPs d:/Vivado_Labs/IPs/ALU d:/Vivado_Labs/Lab1/OExp01-ALU/OExp01-ALU.srcs d:/Vivado_Labs/Lab1/OExp01-ALU/IP_Include} [current_project]
+update_ip_catalog
+export_ip_user_files -of_objects  [get_files d:/Vivado_Labs/IPs/component.xml] -no_script -reset -force -quiet
+remove_files  d:/Vivado_Labs/IPs/component.xml
+ipx::package_project -root_dir D:/Vivado_Labs/IPs/ALU -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core d:/Vivado_Labs/IPs/ALU/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory D:/Vivado_Labs/IPs/ALU d:/Vivado_Labs/IPs/ALU/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Vivado_Labs/IPs/ALU

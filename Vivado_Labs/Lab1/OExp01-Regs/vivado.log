@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Sep 18 20:11:28 2024
+# Process ID: 20248
+# Current directory: D:/Vivado_Labs/Lab1/OExp01-Regs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7304 D:\Vivado_Labs\Lab1\OExp01-Regs\OExp01-Regs.xpr
+# Log file: D:/Vivado_Labs/Lab1/OExp01-Regs/vivado.log
+# Journal file: D:/Vivado_Labs/Lab1/OExp01-Regs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado_Labs/Lab1/OExp01-Regs/OExp01-Regs.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ASUS/Desktop/OExp_RISCV/OExp01/OExp01-Regs' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/Vivado_Labs/Lab1/OExp01-Regs/OExp01-Regs.srcs/component.xml', nor could it be found using path 'C:/Users/ASUS/Desktop/OExp_RISCV/OExp01/OExp01-Regs/OExp01-Regs.srcs/component.xml'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_Labs/Lab1/OExp01-Regs/OExp01-Regs.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/apps/Vivado/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 831.238 ; gain = 112.270
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 18 20:12:09 2024...
