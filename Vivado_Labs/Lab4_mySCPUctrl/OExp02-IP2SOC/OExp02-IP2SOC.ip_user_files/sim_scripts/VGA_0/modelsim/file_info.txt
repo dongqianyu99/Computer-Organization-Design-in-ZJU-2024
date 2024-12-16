@@ -1,7 +1,0 @@
-Hex2Ascii.v,verilog,xil_defaultlib,../../../../OExp02-IP2SOC.gen/sources_1/ip/VGA_0/src/Hex2Ascii.v,
-VgaController.v,verilog,xil_defaultlib,../../../../OExp02-IP2SOC.gen/sources_1/ip/VGA_0/src/VgaController.v,
-VgaDebugger.v,verilog,xil_defaultlib,../../../../OExp02-IP2SOC.gen/sources_1/ip/VGA_0/src/VgaDebugger.v,
-VgaDisplay.v,verilog,xil_defaultlib,../../../../OExp02-IP2SOC.gen/sources_1/ip/VGA_0/src/VgaDisplay.v,
-VGA.v,verilog,xil_defaultlib,../../../../OExp02-IP2SOC.gen/sources_1/ip/VGA_0/src/VGA.v,
-VGA_0.v,verilog,xil_defaultlib,../../../../OExp02-IP2SOC.gen/sources_1/ip/VGA_0/sim/VGA_0.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v
