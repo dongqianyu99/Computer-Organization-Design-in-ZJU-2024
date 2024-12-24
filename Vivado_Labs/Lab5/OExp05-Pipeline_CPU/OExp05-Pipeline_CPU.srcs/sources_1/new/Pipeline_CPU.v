@@ -155,7 +155,8 @@ module Pipeline_CPU(
         .en_IDEX(1'b1),
         .PC_in_IDEX(PC_out_IFID),
         .Rd_addr_IDEX(Rd_addr_out_ID),
-        .Rs1_in_IDEx(Rs1_out_ID),  //???
+        // .Rs1_in_IDEx(Rs1_out_ID),  //???
+        .Rs1_in_IDEX(Rs1_out_ID),
         .Rs2_in_IDEX(Rs2_out_ID),
         .Imm_in_IDEX(Imm_out_ID),
         .ALUSrc_B_in_IDEX(ALUSrc_B_ID),

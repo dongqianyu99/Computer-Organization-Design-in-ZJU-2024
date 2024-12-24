@@ -70,40 +70,49 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
+set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
+set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.cache/wt [current_project]
 set_property parent.project_path D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_repo_paths d:/Vivado_Labs/IPs [current_project]
+update_ip_catalog
 set_property ip_output_repo d:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   D:/Vivado_Labs/Lab5/pre/Ex_reg_Mem.v
-  D:/Vivado_Labs/Lab5/pre/ID_reg_Ex.v
-  D:/Vivado_Labs/Lab5/pre/IF_reg_ID.v
   D:/Vivado_Labs/Lab5/pre/Mem_reg_WB.v
   D:/Vivado_Labs/Lab5/pre/Pipeline_Ex.v
-  D:/Vivado_Labs/Lab5/pre/Pipeline_ID.v
-  D:/Vivado_Labs/Lab5/pre/Pipeline_IF.v
   D:/Vivado_Labs/Lab5/pre/Pipeline_Mem.v
   D:/Vivado_Labs/Lab5/pre/Pipeline_WB.v
   D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v
+  D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_IF.v
+  D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/REG32.v
+  D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/add_32.v
+  D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/IF_reg_ID.v
+  D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v
+  D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/ImmGen.v
+  D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/SCPU_ctrl.v
+  D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/ID_reg_Ex.v
 }
+read_ip -quiet d:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0.xci
+
+read_ip -quiet d:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/ip/Regs_0/Regs_0.xci
+
 read_edif D:/Vivado_Labs/Lab5/pre/Pipeline_WB.edf
 read_edif D:/Vivado_Labs/Lab5/pre/Pipeline_Mem.edf
-read_edif D:/Vivado_Labs/Lab5/pre/Pipeline_IF.edf
-read_edif D:/Vivado_Labs/Lab5/pre/Pipeline_ID.edf
 read_edif D:/Vivado_Labs/Lab5/pre/Pipeline_Ex.edf
 read_edif D:/Vivado_Labs/Lab5/pre/Mem_reg_WB.edf
-read_edif D:/Vivado_Labs/Lab5/pre/IF_reg_ID.edf
-read_edif D:/Vivado_Labs/Lab5/pre/ID_reg_Ex.edf
 read_edif D:/Vivado_Labs/Lab5/pre/Ex_reg_Mem.edf
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -114,7 +123,11 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/utils_1/imports/synth_1/Pipeline_CPU.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

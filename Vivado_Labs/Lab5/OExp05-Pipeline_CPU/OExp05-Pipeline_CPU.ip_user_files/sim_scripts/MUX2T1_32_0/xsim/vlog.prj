@@ -1,0 +1,8 @@
+verilog xil_defaultlib  \
+"../../../../OExp05-Pipeline_CPU.gen/sources_1/ip/MUX2T1_32_0/src/MUX2T1_32.v" \
+"../../../../OExp05-Pipeline_CPU.gen/sources_1/ip/MUX2T1_32_0/sim/MUX2T1_32_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

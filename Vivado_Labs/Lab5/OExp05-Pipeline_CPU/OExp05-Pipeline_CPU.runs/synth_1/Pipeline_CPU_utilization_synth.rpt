@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Mon Dec 23 21:20:23 2024
+| Date         : Tue Dec 24 17:34:00 2024
 | Host         : Lee running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Pipeline_CPU_utilization_synth.rpt -pb Pipeline_CPU_utilization_synth.pb
 | Design       : Pipeline_CPU
@@ -31,11 +31,11 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             | 1033 |     0 |          0 |     63400 |  1.63 |
-|   LUT as Logic          | 1033 |     0 |          0 |     63400 |  1.63 |
+| Slice LUTs*             |  994 |     0 |          0 |     63400 |  1.57 |
+|   LUT as Logic          |  994 |     0 |          0 |     63400 |  1.57 |
 |   LUT as Memory         |    0 |     0 |          0 |     19000 |  0.00 |
-| Slice Registers         | 1477 |     0 |          0 |    126800 |  1.16 |
-|   Register as Flip Flop | 1477 |     0 |          0 |    126800 |  1.16 |
+| Slice Registers         | 1443 |     0 |          0 |    126800 |  1.14 |
+|   Register as Flip Flop | 1443 |     0 |          0 |    126800 |  1.14 |
 |   Register as Latch     |    0 |     0 |          0 |    126800 |  0.00 |
 | F7 Muxes                |  257 |     0 |          0 |     31700 |  0.81 |
 | F8 Muxes                |    0 |     0 |          0 |     15850 |  0.00 |
@@ -57,7 +57,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 1477  |          Yes |           - |        Reset |
+| 1443  |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 0     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -114,7 +114,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCTRL   |    0 |     0 |          0 |        32 |  0.00 |
+| BUFGCTRL   |    1 |     0 |          0 |        32 |  3.13 |
 | BUFIO      |    0 |     0 |          0 |        24 |  0.00 |
 | MMCME2_ADV |    0 |     0 |          0 |         6 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |          0 |         6 |  0.00 |
@@ -148,17 +148,18 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDCE     | 1477 |        Flop & Latch |
-| LUT6     |  678 |                 LUT |
+| FDCE     | 1443 |        Flop & Latch |
+| LUT6     |  676 |                 LUT |
 | MUXF7    |  257 |               MuxFx |
 | OBUF     |  226 |                  IO |
-| LUT5     |  182 |                 LUT |
-| LUT4     |   90 |                 LUT |
-| LUT3     |   74 |                 LUT |
+| LUT5     |  174 |                 LUT |
+| LUT4     |   88 |                 LUT |
 | IBUF     |   66 |                  IO |
+| LUT3     |   65 |                 LUT |
 | CARRY4   |   44 |          CarryLogic |
-| LUT2     |   34 |                 LUT |
-| LUT1     |    1 |                 LUT |
+| LUT2     |   32 |                 LUT |
+| LUT1     |    2 |                 LUT |
+| BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
 
@@ -178,12 +179,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 +--------------+------+
 | Pipeline_WB  |    1 |
 | Pipeline_Mem |    1 |
-| Pipeline_IF  |    1 |
-| Pipeline_ID  |    1 |
 | Pipeline_Ex  |    1 |
 | Mem_reg_WB   |    1 |
-| IF_reg_ID    |    1 |
-| ID_reg_Ex    |    1 |
 | Ex_reg_Mem   |    1 |
 +--------------+------+
 
