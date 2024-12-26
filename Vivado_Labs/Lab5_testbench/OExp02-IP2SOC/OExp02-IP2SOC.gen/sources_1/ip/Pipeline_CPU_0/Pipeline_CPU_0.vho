@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 -- IP VLNV: xilinx.com:user:Pipeline_CPU:1.0
--- IP Revision: 3
+-- IP Revision: 2
 
 -- The following code must appear in the VHDL architecture header.
 
@@ -65,7 +65,39 @@ COMPONENT Pipeline_CPU_0
     Data_out : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     Data_out_WB : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     MemRW_Mem : OUT STD_LOGIC;
-    MemRW_EX : OUT STD_LOGIC 
+    MemRW_EX : OUT STD_LOGIC;
+    Reg00 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg01 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg02 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg03 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg04 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg05 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg06 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg07 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg08 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg09 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg10 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg11 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg12 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg13 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg14 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg15 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg16 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg17 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg18 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg19 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg20 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg21 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg22 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg23 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg24 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg25 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg26 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg27 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg28 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg29 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg30 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Reg31 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) 
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
@@ -88,7 +120,39 @@ your_instance_name : Pipeline_CPU_0
     Data_out => Data_out,
     Data_out_WB => Data_out_WB,
     MemRW_Mem => MemRW_Mem,
-    MemRW_EX => MemRW_EX
+    MemRW_EX => MemRW_EX,
+    Reg00 => Reg00,
+    Reg01 => Reg01,
+    Reg02 => Reg02,
+    Reg03 => Reg03,
+    Reg04 => Reg04,
+    Reg05 => Reg05,
+    Reg06 => Reg06,
+    Reg07 => Reg07,
+    Reg08 => Reg08,
+    Reg09 => Reg09,
+    Reg10 => Reg10,
+    Reg11 => Reg11,
+    Reg12 => Reg12,
+    Reg13 => Reg13,
+    Reg14 => Reg14,
+    Reg15 => Reg15,
+    Reg16 => Reg16,
+    Reg17 => Reg17,
+    Reg18 => Reg18,
+    Reg19 => Reg19,
+    Reg20 => Reg20,
+    Reg21 => Reg21,
+    Reg22 => Reg22,
+    Reg23 => Reg23,
+    Reg24 => Reg24,
+    Reg25 => Reg25,
+    Reg26 => Reg26,
+    Reg27 => Reg27,
+    Reg28 => Reg28,
+    Reg29 => Reg29,
+    Reg30 => Reg30,
+    Reg31 => Reg31
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ---------
 

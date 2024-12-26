@@ -88,6 +88,39 @@ module CSSTE_Pipe(
     wire counter2_OUT_o;
     wire [31: 0] counter_out_o;
 
+    wire [31:0] Reg00;
+    wire [31:0] Reg01;
+    wire [31:0] Reg02;
+    wire [31:0] Reg03;
+    wire [31:0] Reg04;
+    wire [31:0] Reg05;
+    wire [31:0] Reg06;
+    wire [31:0] Reg07;
+    wire [31:0] Reg08;
+    wire [31:0] Reg09;
+    wire [31:0] Reg10;
+    wire [31:0] Reg11;
+    wire [31:0] Reg12;
+    wire [31:0] Reg13;
+    wire [31:0] Reg14;
+    wire [31:0] Reg15;
+    wire [31:0] Reg16;
+    wire [31:0] Reg17;
+    wire [31:0] Reg18;
+    wire [31:0] Reg19;
+    wire [31:0] Reg20;
+    wire [31:0] Reg21;
+    wire [31:0] Reg22;
+    wire [31:0] Reg23;
+    wire [31:0] Reg24;
+    wire [31:0] Reg25;
+    wire [31:0] Reg26;
+    wire [31:0] Reg27;
+    wire [31:0] Reg28;
+    wire [31:0] Reg29;
+    wire [31:0] Reg30;
+    wire [31:0] Reg31;
+
     Pipeline_CPU_0 U1(
         .clk(Clk_CPU_o),
         .rst(rst_o),
@@ -101,7 +134,40 @@ module CSSTE_Pipe(
         .MemRW_Mem(MemRW_Mem_o),
         .Data_out(Data_out_o),
         .Addr_out(Addr_out_o),
-        .Data_out_WB(Data_out_WB_o)
+        .Data_out_WB(Data_out_WB_o),
+
+        .Reg00(Reg00),
+        .Reg01(Reg01),
+        .Reg02(Reg02),
+        .Reg03(Reg03),
+        .Reg04(Reg04),
+        .Reg05(Reg05),
+        .Reg06(Reg06),
+        .Reg07(Reg07),
+        .Reg08(Reg08),
+        .Reg09(Reg09),
+        .Reg10(Reg10),
+        .Reg11(Reg11),
+        .Reg12(Reg12),
+        .Reg13(Reg13),
+        .Reg14(Reg14),
+        .Reg15(Reg15),
+        .Reg16(Reg16),
+        .Reg17(Reg17),
+        .Reg18(Reg18),
+        .Reg19(Reg19),
+        .Reg20(Reg20),
+        .Reg21(Reg21),
+        .Reg22(Reg22),
+        .Reg23(Reg23),
+        .Reg24(Reg24),
+        .Reg25(Reg25),
+        .Reg26(Reg26),
+        .Reg27(Reg27),
+        .Reg28(Reg28),
+        .Reg29(Reg29),
+        .Reg30(Reg30),
+        .Reg31(Reg31)
     );
 
     ROM_D_0 U2(
@@ -238,7 +304,40 @@ module CSSTE_Pipe(
         .vs(VSYNC),
         .vga_r(Red),
         .vga_g(Green),
-        .vga_b(Blue)
+        .vga_b(Blue),
+
+        .x0(Reg00),
+        .x1(Reg01),
+        .x2(Reg02),
+        .x3(Reg03),
+        .x4(Reg04),
+        .x5(Reg05),
+        .x6(Reg06),
+        .x7(Reg07),
+        .x8(Reg08),
+        .x9(Reg09),
+        .x10(Reg10),
+        .x11(Reg11),
+        .x12(Reg12),
+        .x13(Reg13),
+        .x14(Reg14),
+        .x15(Reg15),
+        .x16(Reg16),
+        .x17(Reg17),
+        .x18(Reg18),
+        .x19(Reg19),
+        .x20(Reg20),
+        .x21(Reg21),
+        .x22(Reg22),
+        .x23(Reg23),
+        .x24(Reg24),
+        .x25(Reg25),
+        .x26(Reg26),
+        .x27(Reg27),
+        .x28(Reg28),
+        .x29(Reg29),
+        .x30(Reg30),
+        .x31(Reg31)
     );
 
 

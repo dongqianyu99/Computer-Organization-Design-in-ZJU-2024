@@ -3,7 +3,7 @@
   "ip_inst": {
     "xci_name": "Pipeline_CPU_0",
     "component_reference": "xilinx.com:user:Pipeline_CPU:1.0",
-    "ip_revision": "3",
+    "ip_revision": "2",
     "gen_directory": "../../../../OExp02-IP2SOC.gen/sources_1/ip/Pipeline_CPU_0",
     "parameters": {
       "component_parameters": {
@@ -24,7 +24,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
-        "IPREVISION": [ { "value": "3" } ],
+        "IPREVISION": [ { "value": "2" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../OExp02-IP2SOC.gen/sources_1/ip/Pipeline_CPU_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -47,7 +47,39 @@
         "Data_out": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
         "Data_out_WB": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
         "MemRW_Mem": [ { "direction": "out" } ],
-        "MemRW_EX": [ { "direction": "out" } ]
+        "MemRW_EX": [ { "direction": "out" } ],
+        "Reg00": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg01": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg02": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg03": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg04": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg05": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg06": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg07": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg08": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg09": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg10": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg11": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg12": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg13": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg14": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg15": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg16": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg17": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg18": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg19": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg20": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg21": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg22": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg23": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg24": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg25": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg26": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg27": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg28": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg29": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg30": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "Reg31": [ { "direction": "out", "size_left": "31", "size_right": "0" } ]
       },
       "interfaces": {
         "rst": {

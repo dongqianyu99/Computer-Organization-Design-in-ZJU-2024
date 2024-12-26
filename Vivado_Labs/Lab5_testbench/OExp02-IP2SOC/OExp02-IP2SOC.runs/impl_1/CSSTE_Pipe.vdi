@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Tue Dec 24 15:13:28 2024
-# Process ID: 25348
+# Start of session at: Thu Dec 26 15:22:49 2024
+# Process ID: 14560
 # Current directory: D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1
 # Command line: vivado.exe -log CSSTE_Pipe.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source CSSTE_Pipe.tcl -notrace
 # Log file: D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/CSSTE_Pipe.vdi
@@ -12,7 +12,7 @@
 # Running On: Lee, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16849 MB
 #-----------------------------------------------------------
 source CSSTE_Pipe.tcl -notrace
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 486.605 ; gain = 181.012
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 486.211 ; gain = 182.609
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_Labs/IPs'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/IPs'.
@@ -22,15 +22,15 @@ Command: link_design -top CSSTE_Pipe -part xc7a100tcsg324-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 937.711 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 879 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 936.840 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 603 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2023.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/constrs_1/imports/pre/A7.xdc]
 Finished Parsing XDC File [D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/constrs_1/imports/pre/A7.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1055.797 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1052.445 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 190 instances were transformed.
   RAM64M => RAM64M (RAMD64E(x4)): 128 instances
@@ -38,7 +38,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 11 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1055.797 ; gain = 556.586
+link_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1052.445 ; gain = 553.188
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -49,49 +49,48 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.724 . Memory (MB): peak = 1082.738 ; gain = 26.941
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.891 . Memory (MB): peak = 1079.402 ; gain = 26.957
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 158c5f23d
+Ending Cache Timing Information Task | Checksum: 7f163181
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1637.832 ; gain = 555.094
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1635.500 ; gain = 556.098
 
 Starting Logic Optimization Task
 
 Phase 1 Initialization
 
 Phase 1.1 Core Generation And Design Setup
-Phase 1.1 Core Generation And Design Setup | Checksum: 158c5f23d
+Phase 1.1 Core Generation And Design Setup | Checksum: 7f163181
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2005.434 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2003.125 ; gain = 0.000
 
 Phase 1.2 Setup Constraints And Sort Netlist
-Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 158c5f23d
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 7f163181
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2005.434 ; gain = 0.000
-Phase 1 Initialization | Checksum: 158c5f23d
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2003.125 ; gain = 0.000
+Phase 1 Initialization | Checksum: 7f163181
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2005.434 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2003.125 ; gain = 0.000
 
 Phase 2 Timer Update And Timing Data Collection
 
 Phase 2.1 Timer Update
-Phase 2.1 Timer Update | Checksum: 158c5f23d
+Phase 2.1 Timer Update | Checksum: 7f163181
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 2005.434 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2003.125 ; gain = 0.000
 
 Phase 2.2 Timing Data Collection
-Phase 2.2 Timing Data Collection | Checksum: 158c5f23d
+Phase 2.2 Timing Data Collection | Checksum: 7f163181
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 2005.434 ; gain = 0.000
-Phase 2 Timer Update And Timing Data Collection | Checksum: 158c5f23d
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 2003.125 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 7f163181
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 2005.434 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 2003.125 ; gain = 0.000
 
 Phase 3 Retarget
-INFO: [Opt 31-138] Pushed 6 inverter(s) to 226 load pin(s).
-CRITICAL WARNING: [Opt 31-430] Found a FDCE that its data pin is undriven. Driver is required to prevent unexpected behavior:U1/inst/Mem_reg_WB/RegWrite_out_MemWB_reg
+INFO: [Opt 31-138] Pushed 6 inverter(s) to 227 load pin(s).
 CRITICAL WARNING: [Opt 31-430] Found a FDCE that its data pin is undriven. Driver is required to prevent unexpected behavior:U10/counter0_Lock_reg[10]
 CRITICAL WARNING: [Opt 31-430] Found a FDCE that its data pin is undriven. Driver is required to prevent unexpected behavior:U10/counter0_Lock_reg[11]
 CRITICAL WARNING: [Opt 31-430] Found a FDCE that its data pin is undriven. Driver is required to prevent unexpected behavior:U10/counter0_Lock_reg[12]
@@ -191,74 +190,73 @@ CRITICAL WARNING: [Opt 31-430] Found a FDCE that its data pin is undriven. Drive
 CRITICAL WARNING: [Opt 31-430] Found a FDCE that its data pin is undriven. Driver is required to prevent unexpected behavior:U10/counter_Ctrl_reg[1]
 CRITICAL WARNING: [Opt 31-430] Found a FDCE that its data pin is undriven. Driver is required to prevent unexpected behavior:U10/counter_Ctrl_reg[2]
 CRITICAL WARNING: [Opt 31-430] Found a FDCE that its data pin is undriven. Driver is required to prevent unexpected behavior:U10/counter_Ctrl_reg[9]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:U5/disp_data_reg[10]
 INFO: [Common 17-14] Message 'Opt 31-430' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 3 Retarget | Checksum: a51f7546
+Phase 3 Retarget | Checksum: 1a445da4c
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.175 . Memory (MB): peak = 2005.434 ; gain = 0.000
-Retarget | Checksum: a51f7546
-INFO: [Opt 31-389] Phase Retarget created 10 cells and removed 15 cells
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 2003.125 ; gain = 0.000
+Retarget | Checksum: 1a445da4c
+INFO: [Opt 31-389] Phase Retarget created 46 cells and removed 52 cells
 
 Phase 4 Constant propagation
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 4 Constant propagation | Checksum: e897abdb
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 127 load pin(s).
+Phase 4 Constant propagation | Checksum: 118196e65
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.207 . Memory (MB): peak = 2005.434 ; gain = 0.000
-Constant propagation | Checksum: e897abdb
-INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 8 cells
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.244 . Memory (MB): peak = 2003.125 ; gain = 0.000
+Constant propagation | Checksum: 118196e65
+INFO: [Opt 31-389] Phase Constant propagation created 191 cells and removed 444 cells
 
 Phase 5 Sweep
-Phase 5 Sweep | Checksum: 132283fbd
+Phase 5 Sweep | Checksum: 28c085306
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.258 . Memory (MB): peak = 2005.434 ; gain = 0.000
-Sweep | Checksum: 132283fbd
-INFO: [Opt 31-389] Phase Sweep created 13 cells and removed 132 cells
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.295 . Memory (MB): peak = 2003.125 ; gain = 0.000
+Sweep | Checksum: 28c085306
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 311 cells
 
 Phase 6 BUFG optimization
-INFO: [Opt 31-194] Inserted BUFG U8/Clk_CPU_BUFG_inst to drive 1652 load(s) on clock net U8/Clk_CPU_BUFG
-INFO: [Opt 31-194] Inserted BUFG U8/clkdiv[11]_BUFG_inst to drive 38 load(s) on clock net U8/clkdiv_BUFG[11]
-INFO: [Opt 31-194] Inserted BUFG U8/clkdiv_BUFG[6]_BUFG_inst to drive 38 load(s) on clock net U8/clkdiv_BUFG[6]
-INFO: [Opt 31-194] Inserted BUFG U8/clkdiv_BUFG[9]_BUFG_inst to drive 38 load(s) on clock net U8/clkdiv_BUFG[9]
-INFO: [Opt 31-193] Inserted 4 BUFG(s) on clock nets
-Phase 6 BUFG optimization | Checksum: 1fda0ca5c
+INFO: [Opt 31-194] Inserted BUFG U8/Clk_CPU_BUFG_inst to drive 298 load(s) on clock net U8/Clk_CPU_BUFG
+INFO: [Opt 31-194] Inserted BUFG U8/clkdiv[6]_BUFG_inst to drive 36 load(s) on clock net U8/clkdiv_BUFG[6]
+INFO: [Opt 31-193] Inserted 2 BUFG(s) on clock nets
+Phase 6 BUFG optimization | Checksum: 28f338fd5
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.325 . Memory (MB): peak = 2005.434 ; gain = 0.000
-BUFG optimization | Checksum: 1fda0ca5c
-INFO: [Opt 31-662] Phase BUFG optimization created 4 cells of which 4 are BUFGs and removed 0 cells.
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.347 . Memory (MB): peak = 2003.125 ; gain = 0.000
+BUFG optimization | Checksum: 28f338fd5
+INFO: [Opt 31-662] Phase BUFG optimization created 2 cells of which 2 are BUFGs and removed 0 cells.
 
 Phase 7 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 7 Shift Register Optimization | Checksum: 1fda0ca5c
+Phase 7 Shift Register Optimization | Checksum: 28f338fd5
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.330 . Memory (MB): peak = 2005.434 ; gain = 0.000
-Shift Register Optimization | Checksum: 1fda0ca5c
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.350 . Memory (MB): peak = 2003.125 ; gain = 0.000
+Shift Register Optimization | Checksum: 28f338fd5
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 8 Post Processing Netlist
-Phase 8 Post Processing Netlist | Checksum: 1fda0ca5c
+Phase 8 Post Processing Netlist | Checksum: 28f338fd5
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.342 . Memory (MB): peak = 2005.434 ; gain = 0.000
-Post Processing Netlist | Checksum: 1fda0ca5c
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.358 . Memory (MB): peak = 2003.125 ; gain = 0.000
+Post Processing Netlist | Checksum: 28f338fd5
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 
 Phase 9 Finalization
 
 Phase 9.1 Finalizing Design Cores and Updating Shapes
-Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1b97da6c3
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 22dae591c
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.439 . Memory (MB): peak = 2005.434 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.412 . Memory (MB): peak = 2003.125 ; gain = 0.000
 
 Phase 9.2 Verifying Netlist Connectivity
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2005.434 ; gain = 0.000
-Phase 9.2 Verifying Netlist Connectivity | Checksum: 1b97da6c3
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2003.125 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 22dae591c
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.446 . Memory (MB): peak = 2005.434 ; gain = 0.000
-Phase 9 Finalization | Checksum: 1b97da6c3
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.418 . Memory (MB): peak = 2003.125 ; gain = 0.000
+Phase 9 Finalization | Checksum: 22dae591c
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.447 . Memory (MB): peak = 2005.434 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.419 . Memory (MB): peak = 2003.125 ; gain = 0.000
 Opt_design Change Summary
 =========================
 
@@ -266,20 +264,20 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |              10  |              15  |                                              0  |
-|  Constant propagation         |               0  |               8  |                                              0  |
-|  Sweep                        |              13  |             132  |                                              0  |
-|  BUFG optimization            |               4  |               0  |                                              0  |
+|  Retarget                     |              46  |              52  |                                              0  |
+|  Constant propagation         |             191  |             444  |                                              0  |
+|  Sweep                        |               0  |             311  |                                              0  |
+|  BUFG optimization            |               2  |               0  |                                              0  |
 |  Shift Register Optimization  |               0  |               0  |                                              0  |
 |  Post Processing Netlist      |               0  |               0  |                                              0  |
 -------------------------------------------------------------------------------------------------------------------------
 
 
-Ending Logic Optimization Task | Checksum: 1b97da6c3
+Ending Logic Optimization Task | Checksum: 22dae591c
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.448 . Memory (MB): peak = 2005.434 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.420 . Memory (MB): peak = 2003.125 ; gain = 0.000
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2005.434 ; gain = 0.000
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2003.125 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -297,27 +295,27 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 2
-Ending PowerOpt Patch Enables Task | Checksum: 1b97da6c3
+Ending PowerOpt Patch Enables Task | Checksum: 22dae591c
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 1b97da6c3
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 22dae591c
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2074.480 ; gain = 69.047
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.993 . Memory (MB): peak = 2070.215 ; gain = 67.090
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 1b97da6c3
+Ending Final Cleanup Task | Checksum: 22dae591c
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 1b97da6c3
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 22dae591c
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2070.215 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-40 Infos, 2 Warnings, 100 Critical Warnings and 0 Errors encountered.
+38 Infos, 2 Warnings, 100 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 2074.480 ; gain = 1018.684
+opt_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.215 ; gain = 1017.770
 INFO: [runtcl-4] Executing : report_drc -file CSSTE_Pipe_drc_opted.rpt -pb CSSTE_Pipe_drc_opted.pb -rpx CSSTE_Pipe_drc_opted.rpx
 Command: report_drc -file CSSTE_Pipe_drc_opted.rpt -pb CSSTE_Pipe_drc_opted.pb -rpx CSSTE_Pipe_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -325,16 +323,16 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/CSSTE_Pipe_drc_opted.rpt.
 report_drc completed successfully
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2070.215 ; gain = 0.000
 Writing XDEF routing.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2074.480 ; gain = 0.000
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2070.215 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/CSSTE_Pipe_opt.dcp' has been generated.
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
@@ -345,7 +343,7 @@ INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 Running DRC as a precondition to command place_design
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 145 Warnings
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 39 Warnings
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
 
@@ -354,108 +352,108 @@ Starting Placer Task
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 15ec2433a
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 14057dafd
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1e28b991
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d13bcef1
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.403 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.312 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 5a85c1e0
+Phase 1.3 Build Placer Netlist Model | Checksum: 117cb36ae
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.630 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.490 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 5a85c1e0
+Phase 1.4 Constrain Clocks/Macros | Checksum: 117cb36ae
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.639 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 5a85c1e0
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.496 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 117cb36ae
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.649 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.503 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 5a85c1e0
+Phase 2.1 Floorplanning | Checksum: 117cb36ae
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.663 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.515 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 5a85c1e0
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 117cb36ae
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.666 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.516 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 2.3 Post-Processing in Floorplanning
-Phase 2.3 Post-Processing in Floorplanning | Checksum: 5a85c1e0
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 117cb36ae
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.668 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.517 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 2.4 Global Placement Core
 WARNING: [Place 46-29] Timing had been disabled during Placer and, therefore, physical synthesis in Placer will be skipped.
-Phase 2.4 Global Placement Core | Checksum: 1eef65184
+Phase 2.4 Global Placement Core | Checksum: 14a84a14a
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 1eef65184
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 14a84a14a
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1eef65184
+Phase 3.1 Commit Multi Column Macros | Checksum: 14a84a14a
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: b4b384aa
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2059f2f6c
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 16e10470c
+Phase 3.3 Area Swap Optimization | Checksum: 1633219aa
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 140bfaf80
+Phase 3.4 Pipeline Register Optimization | Checksum: 1633219aa
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 3.5 Small Shape Detail Placement
-Phase 3.5 Small Shape Detail Placement | Checksum: 164df8fa3
+Phase 3.5 Small Shape Detail Placement | Checksum: 18f9f5689
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 164df8fa3
+Phase 3.6 Re-assign LUT pins | Checksum: 18f9f5689
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 3.7 Pipeline Register Optimization
-Phase 3.7 Pipeline Register Optimization | Checksum: 1024e5f09
+Phase 3.7 Pipeline Register Optimization | Checksum: 18f9f5689
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 1024e5f09
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 18f9f5689
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 Post Commit Optimization
-Phase 4.1 Post Commit Optimization | Checksum: 1024e5f09
+Phase 4.1 Post Commit Optimization | Checksum: 18f9f5689
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 1024e5f09
+Phase 4.2 Post Placement Cleanup | Checksum: 18f9f5689
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
 
@@ -465,50 +463,50 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |           | Global Congestion | Short Congestion  |
 | Direction | Region Size       | Region Size       |
 |___________|___________________|___________________|
-|      North|                1x1|                2x2|
+|      North|                1x1|                1x1|
 |___________|___________________|___________________|
-|      South|                1x1|                1x1|
+|      South|                1x1|                2x2|
 |___________|___________________|___________________|
 |       East|                1x1|                1x1|
 |___________|___________________|___________________|
 |       West|                1x1|                1x1|
 |___________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: 1024e5f09
+Phase 4.3.1 Print Estimated Congestion | Checksum: 18f9f5689
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Phase 4.3 Placer Reporting | Checksum: 1024e5f09
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 18f9f5689
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2070.215 ; gain = 0.000
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1a0f454b3
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1e689278d
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Ending Placer Task | Checksum: 1782a65d5
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Ending Placer Task | Checksum: 1363a638e
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 2074.480 ; gain = 0.000
-57 Infos, 3 Warnings, 100 Critical Warnings and 0 Errors encountered.
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.215 ; gain = 0.000
+55 Infos, 3 Warnings, 100 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
 INFO: [runtcl-4] Executing : report_io -file CSSTE_Pipe_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2074.480 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 2070.215 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file CSSTE_Pipe_utilization_placed.rpt -pb CSSTE_Pipe_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file CSSTE_Pipe_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2074.480 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2070.215 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.293 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2070.215 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.321 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.180 . Memory (MB): peak = 2070.215 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/CSSTE_Pipe_placed.dcp' has been generated.
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
@@ -516,29 +514,29 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 
 Starting Initial Update Timing Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.355 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.265 . Memory (MB): peak = 2070.215 ; gain = 0.000
 INFO: [Vivado_Tcl 4-235] No timing constraint found. The netlist was not modified.
 INFO: [Common 17-83] Releasing license: Implementation
-65 Infos, 3 Warnings, 100 Critical Warnings and 0 Errors encountered.
+63 Infos, 3 Warnings, 100 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.255 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2070.215 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2074.480 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.295 . Memory (MB): peak = 2074.480 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2070.215 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 2070.215 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/CSSTE_Pipe_physopt.dcp' has been generated.
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
 Running DRC as a precondition to command route_design
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 124 Warnings
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 31 Warnings
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 
 
@@ -546,24 +544,25 @@ Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
 
 Phase 1 Build RT Design
-Checksum: PlaceDB: c397133b ConstDB: 0 ShapeSum: b493529a RouteDB: 0
-Post Restoration Checksum: NetGraph: 716ba755 | NumContArr: b4a05e48 | Constraints: c2a8fa9d | Timing: c2a8fa9d
-Phase 1 Build RT Design | Checksum: 2ab5dfad7
+Checksum: PlaceDB: 78bcc001 ConstDB: 0 ShapeSum: bd7da38d RouteDB: 0
+Post Restoration Checksum: NetGraph: 1c075a70 | NumContArr: 1f2f0ef4 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 1c0885e9e
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 2177.301 ; gain = 102.820
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 2164.672 ; gain = 94.457
 
 Phase 2 Router Initialization
 INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
 
 Phase 2.1 Fix Topology Constraints
-Phase 2.1 Fix Topology Constraints | Checksum: 2ab5dfad7
+Phase 2.1 Fix Topology Constraints | Checksum: 1c0885e9e
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 2208.898 ; gain = 134.418
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 2196.043 ; gain = 125.828
 
 Phase 2.2 Pre Route Cleanup
-Phase 2.2 Pre Route Cleanup | Checksum: 2ab5dfad7
+Phase 2.2 Pre Route Cleanup | Checksum: 1c0885e9e
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 2208.898 ; gain = 134.418
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 2196.051 ; gain = 125.836
+ Number of Nodes with overlaps = 0
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0 %
@@ -571,64 +570,63 @@ Router Utilization Summary
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 4305
+  Number of Failed Nets               = 2048
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 4304
+  Number of Unrouted Nets             = 2047
   Number of Partially Routed Nets     = 1
-  Number of Node Overlaps             = 1
+  Number of Node Overlaps             = 0
 
-Phase 2 Router Initialization | Checksum: 29a7578a8
+Phase 2 Router Initialization | Checksum: 262daa6bb
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 2296.309 ; gain = 221.828
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 2280.617 ; gain = 210.402
 
 Phase 3 Initial Routing
 
 Phase 3.1 Global Routing
-Phase 3.1 Global Routing | Checksum: 29a7578a8
+Phase 3.1 Global Routing | Checksum: 262daa6bb
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 2296.309 ; gain = 221.828
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 2280.617 ; gain = 210.402
 
 Phase 3.2 Initial Net Routing
-Phase 3.2 Initial Net Routing | Checksum: 29eb5e73d
+Phase 3.2 Initial Net Routing | Checksum: 28dfd4a5a
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 2296.309 ; gain = 221.828
-Phase 3 Initial Routing | Checksum: 29eb5e73d
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 2280.617 ; gain = 210.402
+Phase 3 Initial Routing | Checksum: 28dfd4a5a
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 2296.309 ; gain = 221.828
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 2280.617 ; gain = 210.402
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 455
- Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 200
  Number of Nodes with overlaps = 0
-Phase 4.1 Global Iteration 0 | Checksum: 3083a1bda
+Phase 4.1 Global Iteration 0 | Checksum: 307b1941c
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 2296.309 ; gain = 221.828
-Phase 4 Rip-up And Reroute | Checksum: 3083a1bda
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2280.617 ; gain = 210.402
+Phase 4 Rip-up And Reroute | Checksum: 307b1941c
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 2296.309 ; gain = 221.828
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2280.617 ; gain = 210.402
 
 Phase 5 Delay and Skew Optimization
-Phase 5 Delay and Skew Optimization | Checksum: 3083a1bda
+Phase 5 Delay and Skew Optimization | Checksum: 307b1941c
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 2296.309 ; gain = 221.828
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2280.617 ; gain = 210.402
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
-Phase 6.1 Hold Fix Iter | Checksum: 3083a1bda
+Phase 6.1 Hold Fix Iter | Checksum: 307b1941c
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 2296.309 ; gain = 221.828
-Phase 6 Post Hold Fix | Checksum: 3083a1bda
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2280.617 ; gain = 210.402
+Phase 6 Post Hold Fix | Checksum: 307b1941c
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 2296.309 ; gain = 221.828
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2280.617 ; gain = 210.402
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.971885 %
-  Global Horizontal Routing Utilization  = 1.10372 %
+  Global Vertical Routing Utilization    = 0.535144 %
+  Global Horizontal Routing Utilization  = 0.578716 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -642,10 +640,10 @@ Router Utilization Summary
 --GLOBAL Congestion:
 Utilization threshold used for congestion level computation: 0.85
 Congestion Report
-North Dir 1x1 Area, Max Cong = 47.7477%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 46.8468%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 44.1176%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 42.6471%, No Congested Regions.
+North Dir 1x1 Area, Max Cong = 36.9369%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 31.5315%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 32.3529%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 45.5882%, No Congested Regions.
 
 ------------------------------
 Reporting congestion hotspots
@@ -667,36 +665,36 @@ Direction: West
 Congested clusters found at Level 0
 Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
 
-Phase 7 Route finalize | Checksum: 3083a1bda
+Phase 7 Route finalize | Checksum: 307b1941c
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 2296.309 ; gain = 221.828
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2280.617 ; gain = 210.402
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 3083a1bda
+Phase 8 Verifying routed nets | Checksum: 307b1941c
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 2296.309 ; gain = 221.828
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2280.617 ; gain = 210.402
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 25a00ff98
+Phase 9 Depositing Routes | Checksum: 29d6acfb2
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 2296.309 ; gain = 221.828
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2280.617 ; gain = 210.402
 INFO: [Route 35-16] Router Completed Successfully
 
 Phase 10 Post-Route Event Processing
-Phase 10 Post-Route Event Processing | Checksum: 13fde8fae
+Phase 10 Post-Route Event Processing | Checksum: 1e2907b1b
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 2296.309 ; gain = 221.828
-Ending Routing Task | Checksum: 13fde8fae
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2280.617 ; gain = 210.402
+Ending Routing Task | Checksum: 1e2907b1b
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 2296.309 ; gain = 221.828
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2280.617 ; gain = 210.402
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-75 Infos, 3 Warnings, 100 Critical Warnings and 0 Errors encountered.
+73 Infos, 3 Warnings, 100 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 2296.309 ; gain = 221.828
+route_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 2280.617 ; gain = 210.402
 INFO: [runtcl-4] Executing : report_drc -file CSSTE_Pipe_drc_routed.rpt -pb CSSTE_Pipe_drc_routed.pb -rpx CSSTE_Pipe_drc_routed.rpx
 Command: report_drc -file CSSTE_Pipe_drc_routed.rpt -pb CSSTE_Pipe_drc_routed.pb -rpx CSSTE_Pipe_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -717,7 +715,9 @@ Resolution: Please specify clocks using create_clock/create_generated_clock for 
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-85 Infos, 4 Warnings, 100 Critical Warnings and 0 Errors encountered.
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+83 Infos, 5 Warnings, 100 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file CSSTE_Pipe_route_status.rpt -pb CSSTE_Pipe_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file CSSTE_Pipe_timing_summary_routed.rpt -pb CSSTE_Pipe_timing_summary_routed.pb -rpx CSSTE_Pipe_timing_summary_routed.rpx -warn_on_violation 
@@ -731,16 +731,16 @@ INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file CSSTE_Pipe
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2296.309 ; gain = 0.000
-Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.279 . Memory (MB): peak = 2296.309 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2296.309 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2280.617 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.189 . Memory (MB): peak = 2280.617 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2280.617 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 2296.309 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2296.309 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2296.309 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.354 . Memory (MB): peak = 2296.309 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 2280.617 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2280.617 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2280.617 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.251 . Memory (MB): peak = 2280.617 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/CSSTE_Pipe_routed.dcp' has been generated.
 Command: write_bitstream -force CSSTE_Pipe.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
@@ -757,8 +757,6 @@ WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Nei
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
-WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U1/inst/Mem_reg_WB/RegWrite_out_MemWB_reg has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
 WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter0_Lock_reg[10] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
 WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter0_Lock_reg[11] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
 WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter0_Lock_reg[12] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
@@ -790,133 +788,15 @@ WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter0_Lock_reg[6] has 
 WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter0_Lock_reg[7] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
 WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter0_Lock_reg[8] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
 WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter0_Lock_reg[9] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[10] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[11] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[12] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[13] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[14] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[15] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[16] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[17] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[18] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[19] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[1] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[20] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[21] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[22] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[23] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[24] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[25] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[26] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[27] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[28] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[29] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[2] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[30] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[31] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[3] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[4] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[5] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[6] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[7] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[8] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter1_Lock_reg[9] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[10] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[11] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[12] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[13] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[14] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[15] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[16] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[17] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[18] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[19] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[1] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[20] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[21] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[22] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[23] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[24] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[25] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[26] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[27] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[28] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[29] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[2] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[30] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[31] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[3] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[4] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[5] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[6] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[7] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[8] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter2_Lock_reg[9] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter_Ctrl_reg[10] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter_Ctrl_reg[17] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter_Ctrl_reg[18] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter_Ctrl_reg[1] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter_Ctrl_reg[2] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1569] connects_D: The FDCE cell U10/counter_Ctrl_reg[9] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-INFO: [Common 17-14] Message 'DRC REQP-1569' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [DRC REQP-1570] connects_D: The FDPE cell U7/LED_reg[1] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1570] connects_D: The FDPE cell U7/LED_reg[1]_lopt_replica has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1570] connects_D: The FDPE cell U7/LED_reg[3] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1570] connects_D: The FDPE cell U7/LED_reg[3]_lopt_replica has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1570] connects_D: The FDPE cell U7/LED_reg[5] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1570] connects_D: The FDPE cell U7/LED_reg[5]_lopt_replica has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[10] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[11] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[12] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[13] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[14] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[15] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[16] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[17] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[18] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[19] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[1] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[20] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[21] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[22] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[23] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[24] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[25] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[26] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[27] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[28] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[29] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[2] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[30] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[31] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[3] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[4] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[5] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[6] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[7] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[8] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1571] connects_D: The FDRE cell U5/disp_data_reg[9] has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[6]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[6]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[6]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[6]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[31]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[6]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[7]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[7]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[7]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[7]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[31]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[7]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[31]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[9]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[9]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[9]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[9]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[9]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[31]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 183 Warnings
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/WEA[0] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/wea[0]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[21]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/WEA[0] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/wea[0]) which is driven by a register (U1/inst/Ex_reg_Mem/MemRW_out_EXMem_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/WEA[1] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/wea[0]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[21]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/WEA[1] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/wea[0]) which is driven by a register (U1/inst/Ex_reg_Mem/MemRW_out_EXMem_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/WEA[2] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/wea[0]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[21]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/WEA[2] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/wea[0]) which is driven by a register (U1/inst/Ex_reg_Mem/MemRW_out_EXMem_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/WEA[3] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/wea[0]) which is driven by a register (U1/inst/Ex_reg_Mem/ALU_out_EXMem_reg[21]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/WEA[3] (net: U3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/wea[0]) which is driven by a register (U1/inst/Ex_reg_Mem/MemRW_out_EXMem_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 40 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
 Loading data files...
@@ -929,7 +809,7 @@ Writing bitstream ./CSSTE_Pipe.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-15 Infos, 159 Warnings, 0 Critical Warnings and 0 Errors encountered.
+14 Infos, 40 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2717.297 ; gain = 420.988
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 24 15:14:39 2024...
+write_bitstream: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2697.180 ; gain = 416.562
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 26 15:23:57 2024...

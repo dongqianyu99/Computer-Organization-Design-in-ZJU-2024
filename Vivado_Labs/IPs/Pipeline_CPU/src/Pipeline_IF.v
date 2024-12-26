@@ -1,23 +1,58 @@
-// Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-// --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Tue Mar  5 17:45:40 2024
-// Host        : LAPTOP-6G31RL0V running 64-bit major release  (build 9200)
-// Command     : write_verilog -mode synth_stub E:/FPGA/ip/Pipeline_IF.v
-// Design      : Pipeline_IF
-// Purpose     : Stub declaration of top-level module interface
-// Device      : xc7a100tcsg324-1
-// --------------------------------------------------------------------------------
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2024/12/24 15:31:58
+// Design Name: 
+// Module Name: Pipeline_IF
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
 
-// This empty module with port declaration file causes synthesis tools to infer a black box for IP.
-// The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
-// Please paste the declaration into a Verilog source file or add the file as an additional source.
-module Pipeline_IF(clk_IF, rst_IF, en_IF, PC_in_IF, PCSrc, PC_out_IF)
-/* synthesis syn_black_box black_box_pad_pin="clk_IF,rst_IF,en_IF,PC_in_IF[31:0],PCSrc,PC_out_IF[31:0]" */;
-  input clk_IF;
-  input rst_IF;
-  input en_IF;
-  input [31:0]PC_in_IF;
-  input PCSrc;
-  output [31:0]PC_out_IF;
+
+module Pipeline_IF(
+    input clk_IF,
+    input rst_IF,
+    input en_IF,
+    input [31: 0] PC_in_IF,
+    input [31: 0] PCSrc,
+    output wire [31:0] PC_out_IF
+    );
+
+    wire [31: 0] o;
+    wire [31: 0] Q;
+    wire [31: 0] c;
+
+    MUX2T1_32_0 MUX2T1_32_0 (
+        .I0(c),
+        .I1(PC_in_IF),
+        .s(PCSrc),
+        .o(o)
+    );
+
+    REG32 PC (
+        .clk(clk_IF),
+        .rst(rst_IF),
+        .CE(en_IF),
+        .D(o),
+        .Q(Q)
+    );
+
+    add_32 add_32 (
+        .a(Q),
+        .b(32'h4),
+        .c(c)
+    );
+
+    assign PC_out_IF = Q;
 endmodule

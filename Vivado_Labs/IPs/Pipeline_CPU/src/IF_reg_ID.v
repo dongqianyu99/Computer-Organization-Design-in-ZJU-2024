@@ -1,25 +1,44 @@
-// Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-// --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Tue Mar  5 18:20:20 2024
-// Host        : LAPTOP-6G31RL0V running 64-bit major release  (build 9200)
-// Command     : write_verilog -mode synth_stub E:/FPGA/ip/IF_reg_ID.v
-// Design      : IF_reg_ID
-// Purpose     : Stub declaration of top-level module interface
-// Device      : xc7a100tcsg324-1
-// --------------------------------------------------------------------------------
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2024/12/24 16:10:29
+// Design Name: 
+// Module Name: IF_reg_ID
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
 
-// This empty module with port declaration file causes synthesis tools to infer a black box for IP.
-// The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
-// Please paste the declaration into a Verilog source file or add the file as an additional source.
-module IF_reg_ID(clk_IFID, rst_IFID, en_IFID, PC_in_IFID, 
-  inst_in_IFID, PC_out_IFID, inst_out_IFID)
-/* synthesis syn_black_box black_box_pad_pin="clk_IFID,rst_IFID,en_IFID,PC_in_IFID[31:0],inst_in_IFID[31:0],PC_out_IFID[31:0],inst_out_IFID[31:0]" */;
-  input clk_IFID;
-  input rst_IFID;
-  input en_IFID;
-  input [31:0]PC_in_IFID;
-  input [31:0]inst_in_IFID;
-  output [31:0]PC_out_IFID;
-  output [31:0]inst_out_IFID;
+
+module IF_reg_ID(
+    input clk_IFID,
+    input rst_IFID,
+    input en_IFID,
+    input [31: 0] PC_in_IFID,
+    input [31: 0] inst_in_IFID,
+    output reg [31: 0] PC_out_IFID,
+    output reg [31: 0] inst_out_IFID
+    );
+
+    always @(posedge clk_IFID or posedge rst_IFID) begin
+        if (rst_IFID == 1) begin
+            PC_out_IFID <= 32'b0;
+            inst_out_IFID <= 32'b0;
+        end
+        else if (en_IFID == 1) begin
+            PC_out_IFID <= PC_in_IFID;
+            inst_out_IFID <= inst_in_IFID;
+        end
+    end
+
 endmodule

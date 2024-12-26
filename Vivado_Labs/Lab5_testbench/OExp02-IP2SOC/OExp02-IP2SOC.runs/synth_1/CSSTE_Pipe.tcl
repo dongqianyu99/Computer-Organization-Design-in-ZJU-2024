@@ -70,7 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
+set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -95,7 +95,7 @@ OPTRACE "Adding files" START { }
 add_files D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/I_mem.coe
 add_files D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/D_mem.coe
 add_files D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/ROM.coe
-add_files d:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/p_mem.coe
+add_files D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/p_mem.coe
 read_verilog -library xil_defaultlib {
   D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/Counter_x.v
   D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/MIO_BUS.v
@@ -113,7 +113,7 @@ set_property used_in_implementation false [get_files -all d:/Vivado_Labs/Lab5_te
 read_ip -quiet D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/RAM_B/RAM_B.xci
 set_property used_in_implementation false [get_files -all d:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/RAM_B/RAM_B_ooc.xdc]
 
-read_ip -quiet d:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci
+read_ip -quiet D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci
 
 read_ip -quiet d:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/Pipeline_CPU_0/Pipeline_CPU_0.xci
 

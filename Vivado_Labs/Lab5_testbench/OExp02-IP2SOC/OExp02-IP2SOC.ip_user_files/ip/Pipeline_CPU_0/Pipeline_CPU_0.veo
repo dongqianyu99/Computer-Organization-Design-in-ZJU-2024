@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: xilinx.com:user:Pipeline_CPU:1.0
-// IP Revision: 3
+// IP Revision: 2
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -67,7 +67,39 @@ Pipeline_CPU_0 your_instance_name (
   .Data_out(Data_out),        // output wire [31 : 0] Data_out
   .Data_out_WB(Data_out_WB),  // output wire [31 : 0] Data_out_WB
   .MemRW_Mem(MemRW_Mem),      // output wire MemRW_Mem
-  .MemRW_EX(MemRW_EX)        // output wire MemRW_EX
+  .MemRW_EX(MemRW_EX),        // output wire MemRW_EX
+  .Reg00(Reg00),              // output wire [31 : 0] Reg00
+  .Reg01(Reg01),              // output wire [31 : 0] Reg01
+  .Reg02(Reg02),              // output wire [31 : 0] Reg02
+  .Reg03(Reg03),              // output wire [31 : 0] Reg03
+  .Reg04(Reg04),              // output wire [31 : 0] Reg04
+  .Reg05(Reg05),              // output wire [31 : 0] Reg05
+  .Reg06(Reg06),              // output wire [31 : 0] Reg06
+  .Reg07(Reg07),              // output wire [31 : 0] Reg07
+  .Reg08(Reg08),              // output wire [31 : 0] Reg08
+  .Reg09(Reg09),              // output wire [31 : 0] Reg09
+  .Reg10(Reg10),              // output wire [31 : 0] Reg10
+  .Reg11(Reg11),              // output wire [31 : 0] Reg11
+  .Reg12(Reg12),              // output wire [31 : 0] Reg12
+  .Reg13(Reg13),              // output wire [31 : 0] Reg13
+  .Reg14(Reg14),              // output wire [31 : 0] Reg14
+  .Reg15(Reg15),              // output wire [31 : 0] Reg15
+  .Reg16(Reg16),              // output wire [31 : 0] Reg16
+  .Reg17(Reg17),              // output wire [31 : 0] Reg17
+  .Reg18(Reg18),              // output wire [31 : 0] Reg18
+  .Reg19(Reg19),              // output wire [31 : 0] Reg19
+  .Reg20(Reg20),              // output wire [31 : 0] Reg20
+  .Reg21(Reg21),              // output wire [31 : 0] Reg21
+  .Reg22(Reg22),              // output wire [31 : 0] Reg22
+  .Reg23(Reg23),              // output wire [31 : 0] Reg23
+  .Reg24(Reg24),              // output wire [31 : 0] Reg24
+  .Reg25(Reg25),              // output wire [31 : 0] Reg25
+  .Reg26(Reg26),              // output wire [31 : 0] Reg26
+  .Reg27(Reg27),              // output wire [31 : 0] Reg27
+  .Reg28(Reg28),              // output wire [31 : 0] Reg28
+  .Reg29(Reg29),              // output wire [31 : 0] Reg29
+  .Reg30(Reg30),              // output wire [31 : 0] Reg30
+  .Reg31(Reg31)              // output wire [31 : 0] Reg31
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

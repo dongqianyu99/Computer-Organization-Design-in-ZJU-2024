@@ -1,30 +1,66 @@
-// Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-// --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Tue Mar  5 17:57:50 2024
-// Host        : LAPTOP-6G31RL0V running 64-bit major release  (build 9200)
-// Command     : write_verilog -mode synth_stub E:/FPGA/ip/Pipeline_Ex.v
-// Design      : Pipeline_Ex
-// Purpose     : Stub declaration of top-level module interface
-// Device      : xc7a100tcsg324-1
-// --------------------------------------------------------------------------------
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2024/12/24 18:32:51
+// Design Name: 
+// Module Name: Pipeline_Ex
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
 
-// This empty module with port declaration file causes synthesis tools to infer a black box for IP.
-// The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
-// Please paste the declaration into a Verilog source file or add the file as an additional source.
-module Pipeline_Ex(PC_in_EX, Rs1_in_EX, Rs2_in_EX, Imm_in_EX, 
-  ALUSrc_B_in_EX, ALU_control_in_EX, PC_out_EX, PC4_out_EX, zero_out_EX, ALU_out_EX, 
-  Rs2_out_EX)
-/* synthesis syn_black_box black_box_pad_pin="PC_in_EX[31:0],Rs1_in_EX[31:0],Rs2_in_EX[31:0],Imm_in_EX[31:0],ALUSrc_B_in_EX,ALU_control_in_EX[2:0],PC_out_EX[31:0],PC4_out_EX[31:0],zero_out_EX,ALU_out_EX[31:0],Rs2_out_EX[31:0]" */;
-  input [31:0]PC_in_EX;
-  input [31:0]Rs1_in_EX;
-  input [31:0]Rs2_in_EX;
-  input [31:0]Imm_in_EX;
-  input ALUSrc_B_in_EX;
-  input [2:0]ALU_control_in_EX;
-  output [31:0]PC_out_EX;
-  output [31:0]PC4_out_EX;
-  output zero_out_EX;
-  output [31:0]ALU_out_EX;
-  output [31:0]Rs2_out_EX;
+
+module Pipeline_Ex(
+    input [31: 0] PC_in_EX,
+    input [31: 0] Imm_in_EX,
+    input [31: 0] Rs1_in_EX,
+    input [31: 0] Rs2_in_EX,
+    input [2: 0] ALU_control_in_EX,
+    input ALUSrc_B_in_EX,
+    output wire [31: 0] PC4_out_EX,
+    output wire [31: 0] PC_out_EX,
+    output wire [31: 0] ALU_out_EX,
+    output wire zero_out_EX,
+    output wire [31: 0] Rs2_out_EX
+    );
+
+    wire [31: 0] o;
+
+    add_32 add_32_0(
+        .a(PC_in_EX),
+        .b(Imm_in_EX),
+        .c(PC_out_EX)
+    );
+
+    add_32 add_32_1(
+        .a(32'h4),
+        .b(PC_in_EX),
+        .c(PC4_out_EX)
+    );
+
+    MUX2T1_32_1 MUX2T1_32_1(
+        .I0(Rs2_in_EX),
+        .I1(Imm_in_EX),
+        .s(ALUSrc_B_in_EX),
+        .o(o)
+    );
+
+    ALU ALU_0(
+        .A(Rs1_in_EX),
+        .B(o),
+        .ALU_operation(ALU_control_in_EX),
+        .res(ALU_out_EX),
+        .zero(zero_out_EX)
+    );
+
 endmodule

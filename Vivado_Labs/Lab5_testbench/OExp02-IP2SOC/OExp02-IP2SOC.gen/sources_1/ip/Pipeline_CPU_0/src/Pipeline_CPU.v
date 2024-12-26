@@ -34,7 +34,40 @@ module Pipeline_CPU(
     output wire [31: 0] Data_out,
     output wire [31: 0] Data_out_WB,
     output wire MemRW_Mem,
-    output wire MemRW_EX
+    output wire MemRW_EX,
+
+    output wire [31:0] Reg00,
+    output wire [31:0] Reg01,
+    output wire [31:0] Reg02,
+    output wire [31:0] Reg03,
+    output wire [31:0] Reg04,
+    output wire [31:0] Reg05,
+    output wire [31:0] Reg06,
+    output wire [31:0] Reg07,
+    output wire [31:0] Reg08,
+    output wire [31:0] Reg09,
+    output wire [31:0] Reg10,
+    output wire [31:0] Reg11,
+    output wire [31:0] Reg12,
+    output wire [31:0] Reg13,
+    output wire [31:0] Reg14,
+    output wire [31:0] Reg15,
+    output wire [31:0] Reg16,
+    output wire [31:0] Reg17,
+    output wire [31:0] Reg18,
+    output wire [31:0] Reg19,
+    output wire [31:0] Reg20,
+    output wire [31:0] Reg21,
+    output wire [31:0] Reg22,
+    output wire [31:0] Reg23,
+    output wire [31:0] Reg24,
+    output wire [31:0] Reg25,
+    output wire [31:0] Reg26,
+    output wire [31:0] Reg27,
+    output wire [31:0] Reg28,
+    output wire [31:0] Reg29,
+    output wire [31:0] Reg30,
+    output wire [31:0] Reg31
     );
 
     // Instruction_Fetch
@@ -146,7 +179,40 @@ module Pipeline_CPU(
         .MemRW_ID(MemRW_ID),
         .Jump_ID(Jump_ID),
         .MemtoReg_ID(MemtoReg_ID),
-        .RegWrite_out_ID(RegWrite_out_ID)
+        .RegWrite_out_ID(RegWrite_out_ID),
+
+        .Reg00(Reg00),
+        .Reg01(Reg01),
+        .Reg02(Reg02),
+        .Reg03(Reg03),
+        .Reg04(Reg04),
+        .Reg05(Reg05),
+        .Reg06(Reg06),
+        .Reg07(Reg07),
+        .Reg08(Reg08),
+        .Reg09(Reg09),
+        .Reg10(Reg10),
+        .Reg11(Reg11),
+        .Reg12(Reg12),
+        .Reg13(Reg13),
+        .Reg14(Reg14),
+        .Reg15(Reg15),
+        .Reg16(Reg16),
+        .Reg17(Reg17),
+        .Reg18(Reg18),
+        .Reg19(Reg19),
+        .Reg20(Reg20),
+        .Reg21(Reg21),
+        .Reg22(Reg22),
+        .Reg23(Reg23),
+        .Reg24(Reg24),
+        .Reg25(Reg25),
+        .Reg26(Reg26),
+        .Reg27(Reg27),
+        .Reg28(Reg28),
+        .Reg29(Reg29),
+        .Reg30(Reg30),
+        .Reg31(Reg31)
     );
 
     ID_reg_Ex ID_reg_Ex(
@@ -155,7 +221,8 @@ module Pipeline_CPU(
         .en_IDEX(1'b1),
         .PC_in_IDEX(PC_out_IFID),
         .Rd_addr_IDEX(Rd_addr_out_ID),
-        .Rs1_in_IDEx(Rs1_out_ID),  //???
+        // .Rs1_in_IDEx(Rs1_out_ID),  //???
+        .Rs1_in_IDEX(Rs1_out_ID),
         .Rs2_in_IDEX(Rs2_out_ID),
         .Imm_in_IDEX(Imm_out_ID),
         .ALUSrc_B_in_IDEX(ALUSrc_B_ID),
@@ -208,7 +275,8 @@ module Pipeline_CPU(
         .Branch_in_EXMem(Branch_out_IDEX),
         .BranchN_in_EXMem(BranchN_out_IDEX),
         .MemRW_in_EXMem(MemRW_out_IDEX),
-        .Junp_in_EXMem(Jump_out_IDEX),  //???
+        // .Junp_in_EXMem(Jump_out_IDEX),  //???
+        .Jump_in_EXMem(Jump_out_IDEX),
         .MemtoReg_in_EXMem(MemtoReg_out_IDEX),
         .RegWrite_in_EXMem(RegWrite_out_IDEX),
         .PC_out_EXMem(PC_out_EXMem),

@@ -115,6 +115,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -133,8 +134,8 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.cache/wt [current_project]
   set_property parent.project_path D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.xpr [current_project]
   set_property ip_repo_paths {
-  d:/Vivado_Labs/IPs
-  d:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/IPs
+  D:/Vivado_Labs/IPs
+  D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/IPs
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.cache/ip [current_project]
@@ -146,7 +147,7 @@ OPTRACE "add files" START { }
   read_ip -quiet D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/Seg7_Dev_0/Seg7_Dev_0.xci
   read_ip -quiet D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/ROM_D_0/ROM_D_0.xci
   read_ip -quiet D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/RAM_B/RAM_B.xci
-  read_ip -quiet d:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci
+  read_ip -quiet D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci
   read_ip -quiet d:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/Pipeline_CPU_0/Pipeline_CPU_0.xci
   read_edif D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/clk_div.edf
   read_edif D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/SPIO.edf
