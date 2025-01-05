@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Thu Dec 26 15:23:46 2024
+| Date             : Mon Dec 30 21:18:59 2024
 | Host             : Lee running 64-bit major release  (build 9200)
 | Command          : report_power -file CSSTE_Pipe_power_routed.rpt -pb CSSTE_Pipe_power_summary_routed.pb -rpx CSSTE_Pipe_power_routed.rpx
 | Design           : CSSTE_Pipe
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 25.188 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 53.231 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 24.391                           |
+| Dynamic (W)              | 52.433                           |
 | Device Static (W)        | 0.797                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,19 +52,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic              |     3.921 |     2978 |       --- |             --- |
-|   LUT as Logic           |     3.338 |     1404 |     63400 |            2.21 |
-|   LUT as Distributed RAM |     0.290 |      636 |     19000 |            3.35 |
-|   CARRY4                 |     0.138 |       53 |     15850 |            0.33 |
-|   Register               |     0.086 |      459 |    126800 |            0.36 |
-|   F7/F8 Muxes            |     0.058 |      328 |     63400 |            0.52 |
-|   BUFG                   |     0.013 |        3 |        32 |            9.38 |
-|   Others                 |     0.000 |       25 |       --- |             --- |
-| Signals                  |     7.582 |     2051 |       --- |             --- |
-| Block RAM                |     0.111 |        1 |       135 |            0.74 |
-| I/O                      |    12.777 |       64 |       210 |           30.48 |
+| Slice Logic              |     6.642 |     3608 |       --- |             --- |
+|   LUT as Logic           |     5.591 |     1701 |     63400 |            2.68 |
+|   CARRY4                 |     0.368 |       89 |     15850 |            0.56 |
+|   LUT as Distributed RAM |     0.304 |      636 |     19000 |            3.35 |
+|   Register               |     0.268 |      730 |    126800 |            0.58 |
+|   F7/F8 Muxes            |     0.076 |      329 |     63400 |            0.52 |
+|   BUFG                   |     0.035 |        5 |        32 |           15.63 |
+|   Others                 |     0.000 |       28 |       --- |             --- |
+| Signals                  |    12.244 |     2526 |       --- |             --- |
+| Block RAM                |     0.130 |        1 |       135 |            0.74 |
+| I/O                      |    33.418 |       64 |       210 |           30.48 |
 | Static Power             |     0.797 |          |           |                 |
-| Total                    |    25.188 |          |           |                 |
+| Total                    |    53.231 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,9 +74,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |    12.235 |      11.672 |      0.563 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.559 |       0.466 |      0.093 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     3.601 |       3.597 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |    19.636 |      19.073 |      0.563 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     1.315 |       1.222 |      0.093 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     9.443 |       9.439 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -141,36 +141,37 @@ Table of Contents
 +-----------------------------------+-----------+
 | Name                              | Power (W) |
 +-----------------------------------+-----------+
-| CSSTE_Pipe                        |    24.391 |
-|   U1                              |     0.598 |
-|     inst                          |     0.598 |
-|       Ex_reg_Mem                  |     0.141 |
-|       Execute                     |     0.009 |
-|       ID_reg_Ex                   |     0.077 |
-|       IF_reg_ID                   |     0.059 |
-|       Instruction_Fetch           |     0.247 |
-|       Mem_reg_WB                  |     0.037 |
-|       Write_Back                  |     0.028 |
-|   U10                             |     0.567 |
-|   U11                             |     9.336 |
-|     inst                          |     9.336 |
-|       vga_controller              |     0.551 |
-|       vga_debugger                |     6.377 |
-|       vga_display                 |     2.408 |
-|   U2                              |     0.262 |
-|     U0                            |     0.262 |
-|       synth_options.dist_mem_inst |     0.262 |
-|   U3                              |     0.111 |
-|     U0                            |     0.111 |
-|       inst_blk_mem_gen            |     0.111 |
-|   U4                              |     0.035 |
-|   U5                              |     0.130 |
-|   U6                              |     0.235 |
-|     inst                          |     0.212 |
-|       U2                          |     0.212 |
-|   U8                              |     0.121 |
-|   U9                              |     0.059 |
-|     u1                            |     0.059 |
+| CSSTE_Pipe                        |    52.433 |
+|   U1                              |     2.799 |
+|     inst                          |     2.799 |
+|       Ex_reg_Mem                  |     0.541 |
+|       Execute                     |     0.233 |
+|       ID_reg_Ex                   |     0.514 |
+|       IF_reg_ID                   |     0.206 |
+|       Instruction_Fetch           |     0.752 |
+|       Mem_reg_WB                  |     0.232 |
+|       Write_Back                  |     0.319 |
+|   U10                             |     1.718 |
+|   U11                             |    11.735 |
+|     inst                          |    11.735 |
+|       vga_controller              |     1.547 |
+|       vga_debugger                |     7.408 |
+|       vga_display                 |     2.780 |
+|   U2                              |     0.489 |
+|     U0                            |     0.489 |
+|       synth_options.dist_mem_inst |     0.489 |
+|   U3                              |     0.293 |
+|     U0                            |     0.293 |
+|       inst_blk_mem_gen            |     0.293 |
+|   U4                              |     0.411 |
+|   U5                              |     0.375 |
+|   U6                              |     0.549 |
+|     inst                          |     0.494 |
+|       U2                          |     0.494 |
+|   U7                              |     0.075 |
+|   U8                              |     0.341 |
+|   U9                              |     0.056 |
+|     u1                            |     0.056 |
 +-----------------------------------+-----------+
 
 

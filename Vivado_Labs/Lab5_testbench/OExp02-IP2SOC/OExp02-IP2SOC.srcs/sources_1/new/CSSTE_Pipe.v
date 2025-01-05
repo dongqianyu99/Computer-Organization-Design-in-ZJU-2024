@@ -121,7 +121,8 @@ module CSSTE_Pipe(
     wire [31:0] Reg30;
     wire [31:0] Reg31;
 
-    Pipeline_CPU_0 U1(
+    myPipeline_CPU_0 U1(
+    // Pipeline_vertify_0 U1(
         .clk(Clk_CPU_o),
         .rst(rst_o),
         .Data_in(Cpu_data4bus_o),

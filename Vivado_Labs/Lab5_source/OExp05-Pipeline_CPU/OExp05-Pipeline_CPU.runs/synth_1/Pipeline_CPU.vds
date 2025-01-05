@@ -1,0 +1,435 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Dec 24 22:08:42 2024
+# Process ID: 19320
+# Current directory: D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.runs/synth_1
+# Command line: vivado.exe -log Pipeline_CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Pipeline_CPU.tcl
+# Log file: D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.runs/synth_1/Pipeline_CPU.vds
+# Journal file: D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.runs/synth_1\vivado.jou
+# Running On: Lee, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16849 MB
+#-----------------------------------------------------------
+source Pipeline_CPU.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 485.969 ; gain = 179.973
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/imports/Pipeline_CPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_Labs/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/apps/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Pipeline_CPU:1.0'. The one found in IP location 'd:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/imports/Pipeline_CPU' will take precedence over the same IP in location d:/Vivado_Labs/IPs/Pipeline_CPU
+Command: read_checkpoint -auto_incremental -incremental D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/utils_1/imports/synth_1/Pipeline_CPU.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/utils_1/imports/synth_1/Pipeline_CPU.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Pipeline_CPU -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7188
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1349.668 ; gain = 441.746
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'PC_out_IF' is not allowed [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v:41]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'PC_out_EX' is not allowed [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v:77]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'Data_out_WB' is not allowed [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v:109]
+INFO: [Synth 8-11241] undeclared symbol 'RegWrite_out_EXMeme', assumed default net type 'wire' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v:247]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_CPU' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_IF' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_IF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX2T1_32_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/MUX2T1_32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2T1_32_0' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/MUX2T1_32.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 's' does not match port width (1) of module 'MUX2T1_32_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_IF.v:39]
+INFO: [Synth 8-6157] synthesizing module 'REG32' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/REG32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'REG32' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/REG32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'add_32' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/add_32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'add_32' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/add_32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_IF' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_IF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IF_reg_ID' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/IF_reg_ID.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IF_reg_ID' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/IF_reg_ID.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_ID' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Regs_0' [d:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.gen/sources_1/ip/Regs_0/synth/Regs_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Regs' [d:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.gen/sources_1/ip/Regs_0/src/Regs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Regs' (0#1) [d:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.gen/sources_1/ip/Regs_0/src/Regs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Regs_0' (0#1) [d:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.gen/sources_1/ip/Regs_0/synth/Regs_0.v:53]
+WARNING: [Synth 8-689] width (32) of port connection 'Wt_addr' does not match port width (5) of module 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:53]
+WARNING: [Synth 8-689] width (32) of port connection 'RegWrite' does not match port width (1) of module 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:55]
+WARNING: [Synth 8-7071] port 'Reg00' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg01' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg02' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg03' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg04' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg05' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg06' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg07' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg08' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg09' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg10' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg11' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg12' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg13' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg14' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg15' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg16' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg17' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg18' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg19' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg20' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg21' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg22' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg23' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg24' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg25' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg26' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg27' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg28' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg29' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg30' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7071] port 'Reg31' of module 'Regs_0' is unconnected for instance 'Regs_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+WARNING: [Synth 8-7023] instance 'Regs_0' of module 'Regs_0' has 41 connections declared, but only 9 given [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:48]
+INFO: [Synth 8-6157] synthesizing module 'ImmGen' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/ImmGen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/ImmGen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SCPU_ctrl' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/SCPU_ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SCPU_ctrl' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/SCPU_ctrl.v:23]
+WARNING: [Synth 8-7071] port 'MIO_ready' of module 'SCPU_ctrl' is unconnected for instance 'SCPU_ctrl_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:68]
+WARNING: [Synth 8-7071] port 'CPU_MIO' of module 'SCPU_ctrl' is unconnected for instance 'SCPU_ctrl_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:68]
+WARNING: [Synth 8-7023] instance 'SCPU_ctrl_0' of module 'SCPU_ctrl' has 13 connections declared, but only 11 given [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_ID' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ID_reg_Ex' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/ID_reg_Ex.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ID_reg_Ex' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/ID_reg_Ex.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'Rd_addr_out_IDEX' does not match port width (32) of module 'ID_reg_Ex' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v:171]
+WARNING: [Synth 8-689] width (1) of port connection 'ALUSrc_B_out_IDEX' does not match port width (32) of module 'ID_reg_Ex' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v:175]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_Ex' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_Ex.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX2T1_32_1' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/MUX2T1_32_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2T1_32_1' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/MUX2T1_32_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_Ex' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_Ex.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'zero_out_EX' does not match port width (1) of module 'Pipeline_Ex' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v:194]
+INFO: [Synth 8-6157] synthesizing module 'Ex_reg_Mem' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Ex_reg_Mem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Ex_reg_Mem' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Ex_reg_Mem.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'zero_in_EXMem' does not match port width (1) of module 'Ex_reg_Mem' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v:206]
+WARNING: [Synth 8-689] width (32) of port connection 'Rd_addr_out_EXMem' does not match port width (5) of module 'Ex_reg_Mem' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v:218]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_Mem' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_Mem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_Mem' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_Mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mem_reg_WB' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Mem_reg_WB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mem_reg_WB' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Mem_reg_WB.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_WB' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_WB.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX4T1_32_0' [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/MUX4T1_32_0.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX4T1_32_0' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/MUX4T1_32_0.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_WB' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_WB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_CPU' (0#1) [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v:23]
+WARNING: [Synth 8-3848] Net CPU_MIO in module/entity SCPU_ctrl does not have driver. [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/SCPU_ctrl.v:36]
+WARNING: [Synth 8-3848] Net Imm_out_ID in module/entity Pipeline_ID does not have driver. [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_ID.v:33]
+WARNING: [Synth 8-3848] Net Rs2_out_EX in module/entity Pipeline_Ex does not have driver. [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_Ex.v:34]
+WARNING: [Synth 8-3848] Net RegWrite_out_EXMeme in module/entity Pipeline_CPU does not have driver. [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v:247]
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[31] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[30] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[29] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[28] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[27] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[26] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[25] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[24] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[23] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[22] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[21] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[20] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[19] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[18] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[17] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[16] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[15] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[14] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[13] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[12] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[11] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[10] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[9] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[8] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[7] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[6] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rd_addr_MemWB[5] in module Mem_reg_WB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[31] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[30] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[29] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[28] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[27] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[26] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[25] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[24] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[23] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[22] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[21] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[20] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[19] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[18] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[17] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[16] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[15] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[14] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[13] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[12] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[11] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[10] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[9] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[8] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[7] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[6] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[5] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[4] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[3] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[2] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[1] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2_out_EX[0] in module Pipeline_Ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CPU_MIO in module SCPU_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIO_ready in module SCPU_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[6] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[5] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[4] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[3] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[2] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[1] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[0] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[31] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[30] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[29] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[28] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[27] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[26] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[25] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[24] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[23] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[22] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[21] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[20] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[19] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[18] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[17] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[16] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[15] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[14] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[13] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[12] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[11] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[10] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[9] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[8] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[7] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[6] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[5] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[4] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[3] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[2] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[1] in module Pipeline_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm_out_ID[0] in module Pipeline_ID is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1461.902 ; gain = 553.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1461.902 ; gain = 553.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1461.902 ; gain = 553.980
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1461.902 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1561.270 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1561.270 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for Instruction_Decoder/Regs_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 48    
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	  33 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 2     
+	  17 Input    3 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 32    
+	   7 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT1   |     2|
+|4     |LUT3   |     2|
+|5     |LUT4   |     4|
+|6     |LUT5   |    68|
+|7     |LUT6   |     1|
+|8     |FDCE   |   266|
+|9     |IBUF   |    66|
+|10    |OBUF   |   226|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 1561.270 ; gain = 653.348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 1561.270 ; gain = 553.980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 1561.270 ; gain = 653.348
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1561.270 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1561.270 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 74e8756d
+INFO: [Common 17-83] Releasing license: Synthesis
+66 Infos, 153 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 1561.270 ; gain = 1063.129
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1561.270 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado_Labs/Lab5/OExp05-Pipeline_CPU/OExp05-Pipeline_CPU.runs/synth_1/Pipeline_CPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Pipeline_CPU_utilization_synth.rpt -pb Pipeline_CPU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 24 22:09:15 2024...

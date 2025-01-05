@@ -15,10 +15,10 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==RAM_B || OR
 # IP: ip/VGA_0/VGA_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==VGA_0 || ORIG_REF_NAME==VGA_0} -quiet] -quiet
 
-# IP: ip/Pipeline_CPU_0/Pipeline_CPU_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Pipeline_CPU_0 || ORIG_REF_NAME==Pipeline_CPU_0} -quiet] -quiet
+# IP: ip/myPipeline_CPU_0/myPipeline_CPU_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==myPipeline_CPU_0 || ORIG_REF_NAME==myPipeline_CPU_0} -quiet] -quiet
 
-# IP: d:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/Pipeline_CPU_0/src/Regs_0/Regs_0.xci
+# IP: d:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/myPipeline_CPU_0/src/Regs_0/Regs_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Regs_0 || ORIG_REF_NAME==Regs_0} -quiet] -quiet
 
 # XDC: d:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/ROM_D_0/ROM_D_0_ooc.xdc

@@ -124,6 +124,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a100tcsg324-1
@@ -148,7 +149,7 @@ OPTRACE "add files" START { }
   read_ip -quiet D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/ROM_D_0/ROM_D_0.xci
   read_ip -quiet D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/RAM_B/RAM_B.xci
   read_ip -quiet D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci
-  read_ip -quiet d:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/Pipeline_CPU_0/Pipeline_CPU_0.xci
+  read_ip -quiet d:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/myPipeline_CPU_0/myPipeline_CPU_0.xci
   read_edif D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/clk_div.edf
   read_edif D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/SPIO.edf
   read_edif D:/Vivado_Labs/Lab5_testbench/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/IP/SAnti_jitter.edf
